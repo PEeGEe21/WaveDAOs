@@ -36,7 +36,7 @@ const Sidebar = () => {
                                     <span className="nav_item">Explore</span> 
                                 </div>
                             </Link>
-                            <Link href="/" className='hover:bg-[#3F3F3F] transition-all ease-in duration-200 border-b border-[#545252]'>
+                            <Link href="/spaces" className='hover:bg-[#3F3F3F] transition-all ease-in duration-200 border-b border-[#545252]'>
                                 <div className='flex items-center gap-3 py-4 px-6 mx-auto text-sm'>
                                    <span>
                                         <SpacesIcon/>
@@ -52,7 +52,7 @@ const Sidebar = () => {
                 </div>
 
                 <div className="about_btn hover:bg-[#3F3F3F] transition-all ease-in duration-200 ">
-                    <Link href="/" className=' '>
+                    <Link href="/spaces" className=' '>
                         <div className='flex items-center gap-3 py-4 px-6 mx-auto text-sm'>
                             <span>
                                 <AboutIcon/>

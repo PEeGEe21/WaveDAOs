@@ -9,7 +9,7 @@ const Layout = ({children}) => {
         <Sidebar/>
         <div className='bg-[#373636] flex-1  h-full overflow-y-auto'>
             <Header/>
-            <div className='px-12 py-4 mt-6 max-w-6xl mx-auto'>
+            <div className='px-12 py-4 pb-9 mb-12 mt-6 max-w-6xl mx-auto'>
                 {children}
             </div>
             
