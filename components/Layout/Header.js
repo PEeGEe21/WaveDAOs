@@ -1,8 +1,16 @@
-import React from 'react'
+import Link from 'next/link'
+import React, { useState } from 'react'
 import LockIcon from '../Icons/LockIcon'
 import ToggleIcon from '../Icons/ToggleIcon'
 
 const Header = () => {
+    const [connectWallet, setConnectWallet] = useState();
+
+    const toggleConnectWalletModal = () =>{
+        setConnectWallet(!connectWallet);
+    }
+
+    
   return (
     <div className='sticky top-0 z-50 py-4 px-6 bg-[#373636] border-b border-[#545252]'>
         <div className='flex items-center justify-between '>
@@ -14,7 +22,7 @@ const Header = () => {
             </div>
 
             <div className='flex items-center gap-8'>
-                <button className='button1 px-7 py-3 flex justify-between items-center gap-5 rounded-full'>
+                <button className='button1 px-7 py-3 flex justify-between items-center gap-5 rounded-full' onClick={toggleConnectWalletModal}>
                     <span>
                         <LockIcon/>
                     </span>
@@ -27,6 +35,43 @@ const Header = () => {
             </div>
 
         </div>
+
+
+
+        {/* MODAL BOX */}
+        <div className={`modal__box ${connectWallet ? 'show' : ''}`}>
+                <div className="modal__box-wrapper shadow-lg rounded-2xl">
+        
+                <div className="flex items-start justify-between mb-6">
+
+                    <div className="grow">
+                        <h1 className="text-2xl font-semibold mb-3">Connect Wallet</h1>
+                 
+                    </div>
+                    
+                    <button className=" flex items-center absolute top-3 right-2  "  onClick={()=>setConnectWallet(false)}>
+                        <span className="pointer-events-none flex items-center p-2">
+                            <svg className='h-5 w-5 ' viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path>
+                            </svg>
+                        </span>             
+                        
+                    </button>
+
+                </div>
+
+                    <div className='flex flex-col gap-4 mt-5 w-full'>
+                        <button className='px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5' type='button' >
+                            <img src='/educare.svg'/> Metamask
+                        </button>
+                        
+                        <button className='px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5' type='button' >
+                            <img src='/educare.svg'/> Keeper
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
     </div>
   )
 }

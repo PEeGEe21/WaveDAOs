@@ -278,6 +278,11 @@ const CreateSpace = () => {
           </button>
           </form>
         </div>
+
+
+
+
+        
       </Layout>
     </div>
   );
