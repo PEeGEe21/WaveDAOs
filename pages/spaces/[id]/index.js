@@ -341,7 +341,7 @@ const SpaceDetail = () => {
                                     {/* <h4 className='text-center mb-5 text-[#CF95F2]'>View all Proposals</h4> */}
 
 
-                                    <Link href="2/proposals" className='rounded-full  text-center py-3 mb-5 button-outline w-full block'>View all Proposals</Link>
+                                    <Link href="/spaces/2/proposals" className='rounded-full  text-center py-3 mb-5 button-outline w-full block button-outline'>View all Proposals</Link>
                                     <Link href="/spaces/2/create-proposals" className='w-full rounded-full bg-[#736C77] text-white py-3 block text-center'>Create Proposals</Link>
                                 </div>
                             </div>
