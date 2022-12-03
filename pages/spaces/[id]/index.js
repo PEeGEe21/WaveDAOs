@@ -56,8 +56,8 @@ const SpaceDetail = () => {
                                 
                                 <div>
                                     <label className='flex flex-col gap-3'>Description of space</label>
-                                    <textarea className="w-full border border-[#3F3F3F] focus:outline-none active:outline-none p-3  placeholder-text-primary bg-transparent rounded-lg textarea placeholder-text-sm text-[#8F8F8F] " aria-placeholder="Leave a note for your client" rows="5" id="description">
-                                    Nulla interdum odio lectus quis donec nulla egestas lectus at. Risus sollicitudin venenatis vitae natoque ut netus. Sit sed a sagittis vel nibh viverra dui odio. Urna auctor mauris eu et pellentesque erat. Imperdiet dui viverra sit phasellus. 
+                                    <textarea className="w-full border border-[#3F3F3F] focus:outline-none active:outline-none p-3  placeholder-text-primary bg-transparent rounded-lg textarea placeholder-text-sm text-[#8F8F8F] " aria-placeholder="Leave a note for your client" rows="5" id="description" defaultValue="Nulla interdum odio lectus quis donec nulla egestas lectus at. Risus sollicitudin venenatis vitae natoque ut netus. Sit sed a sagittis vel nibh viverra dui odio. Urna auctor mauris eu et pellentesque erat. Imperdiet dui viverra sit phasellus. ">
+                                    
                                     </textarea>
                                 </div>
 
