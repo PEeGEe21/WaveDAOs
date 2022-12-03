@@ -57,9 +57,7 @@ a {
 }
 
 
-.button1{
-  background: linear-gradient(181.23deg, #B860ED 0.31%, #EF1698 179.65%);
-}
+
 
 .react-tabs__tab--selected .button2{
   background: #3F3F3F;
@@ -69,6 +67,10 @@ a {
 
 
 
+/* SPACE DETAIL */
+.space-detail label{
+  font-size: 14px;
+}
 
 
 
@@ -85,8 +87,22 @@ a {
 
 
 /* Global CSS */
+
+.button-outline{
+  color: #CF95F2;
+  border: 1px solid #CF95F2;
+
+}
+
+.button1{
+  background: linear-gradient(181.23deg, #B860ED 0.31%, #EF1698 179.65%);
+}
+
 .section__header{
   font-size: 30px;
+}
+h3.section__header{
+  font-size: 20px;
 }
 
 
