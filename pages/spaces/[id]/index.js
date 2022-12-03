@@ -96,7 +96,7 @@ const SpaceDetail = () => {
                                 <div className='space-y-6'>
                                     <div className='mb-4'>
                                        <h5>Controller address</h5>
-                                        <p className='text-xs text-[#8F8F8F]'>The user account with control over the space's settings is the space controller. </p> 
+                                        <p className='text-xs text-[#8F8F8F]'>The user account with control over the spaces settings is the space controller. </p> 
                                     </div>
 
                                     <div className='flex items-center justify-start gap-3 rounded-full border border-[#545252] px-4 py-3 '>

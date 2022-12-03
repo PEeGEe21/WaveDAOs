@@ -4,7 +4,7 @@ import Layout from '../../../components/Layout/Layout'
 import { useRouter } from 'next/router';
 
 
-const createproposals = () => {
+const CreateProposals = () => {
     const router = useRouter();
     const goBack =()=>{
         router.back();
@@ -35,7 +35,7 @@ const createproposals = () => {
 
                 <div className=' w-full mt-3 md:mt-0  relative h-full px-5 '>
                     <div className='flex-1 w-full mb-5'>
-                        <h3  className='section__header'>                Create Proposals</h3>
+                        <h3  className='section__header'>Create Proposals</h3>
                     </div>
 
 
@@ -49,4 +49,4 @@ const createproposals = () => {
   )
 }
 
-export default createproposals
+export default CreateProposals

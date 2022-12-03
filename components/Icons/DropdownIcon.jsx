@@ -9,7 +9,7 @@ const DropdownIcon = ({showDetails}) => {
                 focusable="false"
                 data-prefix="fas"
                 data-icon="caret-down"
-                className={`w-3 ml-3 ${showDetails && '-rotate-90' }`}
+                className={`w-3 ml-3 ${showDetails && '-rotate-90'}`}
                 role="img"
                 viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"
             >

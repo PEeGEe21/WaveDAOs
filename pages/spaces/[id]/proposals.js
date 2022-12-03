@@ -8,7 +8,7 @@ import TabPanel from 'react-tabs/lib/components/TabPanel'
 import ReturnIcon from '../../../components/Icons/ReturnIcon';
 import Link from 'next/link';
 
-const proposals = () => {
+const Proposals = () => {
     const router = useRouter();
     const goBack =()=>{
         router.back();
@@ -141,4 +141,4 @@ const proposals = () => {
   )
 }
 
-export default proposals
+export default Proposals
