@@ -139,7 +139,7 @@ const CreateSpace = () => {
             <input type="checkbox" className="ml-40 text-sm text-gray-300" />
             <label>Use address in this account</label>
             <p className="text-sm text-gray-300">
-              The user account with control over the spaces settings is the
+              The user account with control over the space&apos;s settings is the
               space controller.{" "}
             </p>
             <input
