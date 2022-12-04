@@ -16,7 +16,6 @@ const CreateSpace = () => {
   const toggleMakePublic = (e) => {
     e.preventDefault();
     setMakePublic(!makePublic);
-    
   };
   const [congrats, setCongrats] = useState();
 
@@ -24,7 +23,6 @@ const CreateSpace = () => {
     e.preventDefault();
     setMakePublic(false);
     setCongrats(!congrats);
-    
   };
   return (
     <div>
@@ -62,7 +60,7 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder="Lets go on"
-              className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-10"
+              className="bg-transparent border w-4/5 h-12 border-[#545252]  rounded-3xl p-3 mb-10"
             />
             <br />
             <label className="text-sm text-gray-300">
@@ -72,7 +70,7 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder="Tell us about your space. What is it about?"
-              className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-10"
+              className="bg-transparent border w-4/5 h-12 border-[#545252]  rounded-3xl p-3 mb-10"
             />
             <br />
             <label className="text-sm text-gray-300">Select category</label>
@@ -80,7 +78,7 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder="You can type in what category is your space?"
-              className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-1"
+              className="bg-transparent border w-4/5 h-12 border-[#545252]  rounded-3xl p-3 mb-1"
             />
             <div className="flex mb-5">
               <button className="bg-lyt  h-8 w-24 rounded-3xl mx-1">Art</button>
@@ -114,7 +112,7 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder="Paste URL of your website if any"
-              className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-10"
+              className="bg-transparent border w-4/5 h-12 border-[#545252]  rounded-3xl p-3 mb-10"
             />
             <br />
             <label className="text-sm text-gray-300">Terms of service</label>
@@ -122,39 +120,61 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder="Paste URL of your terms of service if any"
-              className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-1"
+              className="bg-transparent border w-4/5 h-12 border-[#545252]  rounded-3xl p-3 mb-1"
             />
             <div className="border my-7 pl-7 border-gray-500 rounded-md">
               <p className="mb-5">Add Socials</p>
               <label className="text-sm text-gray-300">Github</label>
               <br />
-                <div className="mt-1 relative rounded-full flex-1 bg-transparent items-center grow flex h-14 w-4/5  ">
-                    <div className="absolute inset-y-0 left-0 px-3 flex items-center pointer-events-none h-full">
-                        <span className="text-gray-500 px-3 w-22 h-22">
-                            <img src="/github.svg" className="w-full h-full"/>
-                        </span>
-                    </div>
-                    <input type="text" name="github_address" id="github_address" className="  py-2 block w-full pl-16 pr-7  sm:text-sm rounded-full h-full focus:outline-none bg-transparent border border-[#545252] transition ease-in duration-200"/>
+              <div className="mt-1 relative rounded-full flex-1 bg-transparent items-center grow flex h-14 w-4/5  ">
+                <div className="absolute inset-y-0 left-0 px-3 flex items-center pointer-events-none h-full">
+                  <span className="text-gray-500 px-3 w-22 h-22">
+                    <img src="/github.svg" className="w-full h-full" />
+                  </span>
                 </div>
-                <img src="/discord.svg" />
-                <img src="/twitter.svg" />
+                <input
+                  placeholder="Paste URL"
+                  type="text"
+                  name="github_address"
+                  id="github_address"
+                  className="  py-2 block w-full pl-16 pr-7  sm:text-sm rounded-full h-full focus:outline-none bg-transparent border border-[#545252] transition ease-in duration-200"
+                />
+              </div>
 
               <br />
               <label className="text-sm text-gray-300">Twitter</label>
               <br />
-              <input
-                type="text"
-                placeholder="Paste URL"
-                className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-10"
-              />
+              <div className="mt-1 relative rounded-full flex-1 bg-transparent items-center grow flex h-14 w-4/5  ">
+                <div className="absolute inset-y-0 left-0 px-3 flex items-center pointer-events-none h-full">
+                  <span className="text-gray-500 px-3 w-22 h-22">
+                    <img src="/twitter.svg" className="w-full h-full" />
+                  </span>
+                </div>
+                <input
+                  placeholder="Paste URL"
+                  type="text"
+                  name="twitter_address"
+                  id="twitter_address"
+                  className="  py-2 block w-full pl-16 pr-7  sm:text-sm rounded-full h-full focus:outline-none bg-transparent border border-[#545252] transition ease-in duration-200"
+                />
+              </div>
               <br />
               <label className="text-sm text-gray-300">Discord</label>
               <br />
-              <input
-                type="text"
-                placeholder="Paste URL"
-                className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-3"
-              />
+              <div className="mt-1 mb-5 relative rounded-full flex-1 bg-transparent items-center grow flex h-14 w-4/5  ">
+                <div className="absolute inset-y-0 left-0 px-3 flex items-center pointer-events-none h-full">
+                  <span className="text-gray-500 px-3 w-22 h-22">
+                    <img src="/discord.svg" className="w-full h-full" />
+                  </span>
+                </div>
+                <input
+                  placeholder="Paste URL"
+                  type="text"
+                  name="discord_address"
+                  id="discord_address"
+                  className="  py-2 block w-full pl-16 pr-7  sm:text-sm rounded-full h-full focus:outline-none bg-transparent border border-[#545252] transition ease-in duration-200"
+                />
+              </div>
             </div>
             <button className="button1 button1 h-12 w-full m-auto rounded-3xl">
               Next
@@ -177,7 +197,7 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder="0x6tRtdgji7644780bxsdgi098rewwdgi09986hgdwq4t7v223"
-              className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-10"
+              className="bg-transparent border w-4/5 h-12 border-[#545252]  rounded-3xl p-3 mb-10"
             />
             <div className="border my-7 pl-7 border-gray-500 rounded-md">
               <p className="mt-5 text-lg">Add Partners</p>
@@ -191,7 +211,7 @@ const CreateSpace = () => {
                 <input
                   type="text"
                   placeholder=" 0x6tRtdgji7644780bxsdgi098rewwdgi09986hgdwq4t7v223"
-                  className="bg-transparent border w-3/4 h-12 border-gray-400 rounded-3xl p-3 mb-10"
+                  className="bg-transparent border w-3/4 h-12 border-[#545252]  rounded-3xl p-3 mb-10"
                 />
                 <button className="rounded-3xl text-pin border border-pin h-12 p-2  mx-4">
                   Add Partner
@@ -211,7 +231,7 @@ const CreateSpace = () => {
                 <input
                   type="text"
                   placeholder=" 0x6tRtdgji7644780bxsdgi098rewwdgi09986hgdwq4t7v223"
-                  className="bg-transparent border w-3/4 h-12 border-gray-400 rounded-3xl p-3 mb-10"
+                  className="bg-transparent border w-3/4 h-12 border-[#545252]  rounded-3xl p-3 mb-10"
                 />
                 <button className="rounded-3xl text-pin border border-pin h-12 p-2  mx-4">
                   Add Partner
@@ -242,7 +262,7 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder=""
-              className="bg-transparent border w-full h-12 border-gray-400 rounded-3xl p-3 mb-10"
+              className="bg-transparent border w-full h-12 border-[#545252]  rounded-3xl p-3 mb-10"
             />
             <br />
             <label>Quorum</label>
@@ -252,7 +272,7 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder=""
-              className="bg-transparent border w-full h-12 border-gray-400 rounded-3xl p-3 mb-10"
+              className="bg-transparent border w-full h-12 border-[#545252]  rounded-3xl p-3 mb-10"
             />
             <div className="flex">
               <div>
@@ -263,7 +283,7 @@ const CreateSpace = () => {
                 <input
                   type="text"
                   placeholder=""
-                  className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-10"
+                  className="bg-transparent border w-4/5 h-12 border-[#545252]  rounded-3xl p-3 mb-10"
                 />
               </div>
               <div>
@@ -274,7 +294,7 @@ const CreateSpace = () => {
                 <input
                   type="text"
                   placeholder=""
-                  className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-10"
+                  className="bg-transparent border w-4/5 h-12 border-[#545252]  rounded-3xl p-3 mb-10"
                 />
               </div>
             </div>
@@ -288,7 +308,7 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder=""
-              className="bg-transparent border w-full h-12 border-gray-400 rounded-3xl p-3 mb-10"
+              className="bg-transparent border w-full h-12 border-[#545252]  rounded-3xl p-3 mb-10"
             />
             <br></br>
             <label>Name</label>
@@ -296,7 +316,7 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder=""
-              className="bg-transparent border w-full h-12 border-gray-400 rounded-3xl p-3 mb-10"
+              className="bg-transparent border w-full h-12 border-[#545252]  rounded-3xl p-3 mb-10"
             />
             <br />
             <label>Address</label>
@@ -304,7 +324,7 @@ const CreateSpace = () => {
             <input
               type="text"
               placeholder=""
-              className="bg-transparent border w-full h-12 border-gray-400 rounded-3xl p-3 mb-10"
+              className="bg-transparent border w-full h-12 border-[#545252]  rounded-3xl p-3 mb-10"
             />
             <br></br>
             <div className="text-right">
@@ -461,12 +481,15 @@ const CreateSpace = () => {
             </div>
 
             <div className="flex flex-col gap-4 mt-5 w-full">
-             <Link href='/spaces' className="" > <button
-                className="button1 m-auto px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
-                type="button"
-              >
-                Go to Spaces
-              </button></Link>
+              <Link href="/spaces" className="">
+                {" "}
+                <button
+                  className="button1 m-auto px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
+                  type="button"
+                >
+                  Go to Spaces
+                </button>
+              </Link>
             </div>
           </div>
         </div>
