@@ -27,7 +27,7 @@ const CreateSpace = () => {
   return (
     <div>
       {/* first page connect wallet */}
-      <Layout>
+      <Layout connectWallet={toggleConnectWalletModal}>
         <div className="w-4/6 pl-10">
           <h2 className="text-2xl font-bold my-4">Create a Space</h2>
           <p className="text-sm font-thin text-gray-300 mb-4 ">

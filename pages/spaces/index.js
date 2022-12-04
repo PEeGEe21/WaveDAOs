@@ -52,10 +52,10 @@ const Spaces = () => {
                                     <TabPanel>
                                         <div className=" w-full mt-3 md:mt-0  relative overflow-hidden rounded h-full fade-in">
                                             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-x-12 gap-y-4">
-                                                <Link href="/spaces/2">
+                                                {/* <Link href="/spaces/2"> */}
                                                     <div className='flip'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
-                                                            <div className="flex items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
+                                                            <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
                                                                 <div className='h-20 w-20'>
                                                                     <img src='/spaces-img/image1.svg' className='w-full object-cover rounded-full  '/>
@@ -93,7 +93,7 @@ const Spaces = () => {
                                                         </div>
                                                     </div>
                                                     
-                                                </Link>
+                                                {/* </Link> */}
                                             </div>
                                         </div>
 

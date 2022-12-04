@@ -43,9 +43,9 @@ const ProposalDetail = () => {
                           </div>
                       </div>
 
-                      <div class="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
-                          <span class="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
-                              <span class="h-2 w-4 text-green-500 rounded-full text-center">
+                      <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
+                          <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
+                              <span className="h-2 w-4 text-green-500 rounded-full text-center">
                                   <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <circle cx="3" cy="3" r="3" fill="currentColor"/>
                                   </svg>
@@ -119,92 +119,92 @@ const ProposalDetail = () => {
                                         <h5 className='text-sm'>Votes</h5>
                                       </div>
 
-                                      <div class="flex flex-col voting_table">
-                                      <div class="overflow-x-auto ">
-                                        <div class="py-2 inline-block min-w-full ">
-                                          <div class="overflow-x-auto">
-                                            <table class="min-w-full">
-                                              <thead class="border-b border-[#545055]">
+                                      <div className="flex flex-col voting_table">
+                                      <div className="overflow-x-auto ">
+                                        <div className="py-2 inline-block min-w-full ">
+                                          <div className="overflow-x-auto">
+                                            <table className="min-w-full">
+                                              <thead className="border-b border-[#545055]">
                                                 <tr>
-                                                  <th scope="col" class="text-sm font-medium text-[#6A6A6A] px-6 py-4 text-left">
+                                                  <th scope="col" className="text-sm font-medium text-[#6A6A6A] px-6 py-4 text-left">
                                                   Wallet Address
                                                   </th>
-                                                  <th scope="col" class="text-sm font-medium text-[#6A6A6A] px-6 py-4 text-left">
+                                                  <th scope="col" className="text-sm font-medium text-[#6A6A6A] px-6 py-4 text-left">
                                                   Vote
                                                   </th>
-                                                  <th scope="col" class="text-sm font-medium text-[#6A6A6A] px-6 py-4 text-left">
+                                                  <th scope="col" className="text-sm font-medium text-[#6A6A6A] px-6 py-4 text-left">
                                                   Voting Power
                                                   </th>
                                                 </tr>
                                               </thead>
                                               <tbody>
-                                                <tr class="border-b border-[#545055] text-[#CBCBCB]">
-                                                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium flex items-center justify-start gap-2">
+                                                <tr className="border-b border-[#545055] text-[#CBCBCB]">
+                                                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium flex items-center justify-start gap-2">
                                                     <img src='/spaces-img/image2.svg' className='h-8 w-8'/>
                                                     <span className='text-[#A4A1A1] w-8/12'>
                                                     0xskdf...s505
                                                     </span>
                                                   </td>
-                                                  <td class="text-sm  font-light px-6 py-4 whitespace-nowrap">
+                                                  <td className="text-sm  font-light px-6 py-4 whitespace-nowrap">
                                                     For
                                                   </td>
-                                                  <td class="text-sm  font-light px-6 py-4 whitespace-nowrap">
+                                                  <td className="text-sm  font-light px-6 py-4 whitespace-nowrap">
                                                     300 USDC
                                                   </td>
                                                 </tr>
-                                                <tr class="border-b border-[#545055] text-[#CBCBCB]">
-                                                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium flex items-center justify-start gap-2">
+                                                <tr className="border-b border-[#545055] text-[#CBCBCB]">
+                                                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium flex items-center justify-start gap-2">
                                                     <img src='/spaces-img/image6.svg' className='h-8 w-8'/>
                                                     <span className='text-[#A4A1A1] w-8/12'>
                                                     0xgsD4...234e
                                                     </span>
                                                   </td>
-                                                  <td class="text-sm  font-light px-6 py-4 whitespace-nowrap">
+                                                  <td className="text-sm  font-light px-6 py-4 whitespace-nowrap">
                                                     For
                                                   </td>
-                                                  <td class="text-sm  font-light px-6 py-4 whitespace-nowrap">
+                                                  <td className="text-sm  font-light px-6 py-4 whitespace-nowrap">
                                                     300 USDC
                                                   </td>
                                                 </tr>
-                                                <tr class="border-b border-[#545055] text-[#CBCBCB]">
-                                                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium flex items-center justify-start gap-2">
+                                                <tr className="border-b border-[#545055] text-[#CBCBCB]">
+                                                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium flex items-center justify-start gap-2">
                                                     <img src='/spaces-img/image3.svg' className='h-8 w-8'/>
                                                     <span className='text-[#A4A1A1] w-8/12'>
                                                     0xd5as..SD45
                                                     </span>
                                                   </td>
-                                                  <td class="text-sm  font-light px-6 py-4 whitespace-nowrap">
+                                                  <td className="text-sm  font-light px-6 py-4 whitespace-nowrap">
                                                     Against
                                                   </td>
-                                                  <td class="text-sm  font-light px-6 py-4 whitespace-nowrap">
+                                                  <td className="text-sm  font-light px-6 py-4 whitespace-nowrap">
                                                     300 USDC
                                                   </td>
                                                 </tr>
-                                                <tr class="border-b border-[#545055] text-[#CBCBCB]">
-                                                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium flex items-center justify-start gap-2">
+                                                <tr className="border-b border-[#545055] text-[#CBCBCB]">
+                                                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium flex items-center justify-start gap-2">
                                                     <img src='/spaces-img/image7.svg' className='h-8 w-8'/>
                                                     <span className='text-[#A4A1A1] w-8/12'>
                                                     0xWmd5...789j
                                                     </span>
                                                   </td>
-                                                  <td class="text-sm  font-light px-6 py-4 whitespace-nowrap">
+                                                  <td className="text-sm  font-light px-6 py-4 whitespace-nowrap">
                                                     Abstain
                                                   </td>
-                                                  <td class="text-sm  font-light px-6 py-4 whitespace-nowrap">
+                                                  <td className="text-sm  font-light px-6 py-4 whitespace-nowrap">
                                                     300 USDC
                                                   </td>
                                                 </tr>
-                                                <tr class="border-b border-[#545055] text-[#CBCBCB]">
-                                                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium flex items-center justify-start gap-2">
+                                                <tr className="border-b border-[#545055] text-[#CBCBCB]">
+                                                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium flex items-center justify-start gap-2">
                                                     <img src='/spaces-img/image9.svg' className='h-8 w-8'/>
                                                     <span className='text-[#A4A1A1] w-8/12'>
                                                     0xsae4...4F67
                                                     </span>
                                                   </td>
-                                                  <td class="text-sm  font-light px-6 py-4 whitespace-nowrap">
+                                                  <td className="text-sm  font-light px-6 py-4 whitespace-nowrap">
                                                     For
                                                   </td>
-                                                  <td class="text-sm  font-light px-6 py-4 whitespace-nowrap">
+                                                  <td className="text-sm  font-light px-6 py-4 whitespace-nowrap">
                                                     300 USDC
                                                   </td>
                                                 </tr>

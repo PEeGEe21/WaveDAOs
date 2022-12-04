@@ -16,7 +16,10 @@ const Sidebar = () => {
 
                 
                     <div className='logo flex items-center justify-center py-4 mb-3'>
-                        <img src='/Logo.svg'/>
+                        <Link href="/">
+                            <img src='/Logo.svg'/>
+                        </Link>
+                        
                     </div>
 
                     <div className='flex items-center justify-center mx-auto py-4'>

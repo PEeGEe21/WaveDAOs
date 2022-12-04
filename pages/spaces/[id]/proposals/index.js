@@ -89,10 +89,10 @@ const Proposals = () => {
                                                                     </div>
                                                                 </div>
 
-                                                                {/* <div class="relative  font-normal inline-block text-gray-500 leading-tight ">
+                                                                {/* <div className="relative  font-normal inline-block text-gray-500 leading-tight ">
                                                             
-                                                                    <span class="bg-gray-200 flex items-center rounded-full   justify-start py-2 px-5 ">
-                                                                        <span class="h-2 w-4 text-gray-500 rounded-full mr-1">
+                                                                    <span className="bg-gray-200 flex items-center rounded-full   justify-start py-2 px-5 ">
+                                                                        <span className="h-2 w-4 text-gray-500 rounded-full mr-1">
                                                                         <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <circle cx="3" cy="3" r="3" fill="currentColor"/>
                                                                         </svg>
@@ -102,9 +102,9 @@ const Proposals = () => {
                                                                     </span>
                                                                     
                                                                 </div> */}
-                                                                <div class="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
-                                                                    <span class="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
-                                                                        <span class="h-2 w-4 text-green-500 rounded-full text-center">
+                                                                <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
+                                                                    <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
+                                                                        <span className="h-2 w-4 text-green-500 rounded-full text-center">
                                                                             <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                             <circle cx="3" cy="3" r="3" fill="currentColor"/>
                                                                             </svg>
@@ -138,9 +138,9 @@ const Proposals = () => {
                                                                     <span className='inline-flex items-center gap-1 text-xs'><img src='/spaces-img/image3.svg' className='w-6 h-6'/>0x6tRuldks...v223</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
-                                                                <span class="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
-                                                                    <span class="h-2 w-4 text-[#A4A1A1] rounded-full text-center">
+                                                            <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
+                                                                <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
+                                                                    <span className="h-2 w-4 text-[#A4A1A1] rounded-full text-center">
                                                                         <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <circle cx="3" cy="3" r="3" fill="currentColor"/>
                                                                         </svg>
@@ -173,9 +173,9 @@ const Proposals = () => {
                                                                     <span className='inline-flex items-center gap-1 text-xs'><img src='/spaces-img/image3.svg' className='w-6 h-6'/>0x6tRuldks...v223</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
-                                                                <span class="flex items-center rounded-full text-sm  justify-between py-2 px-5 gap-2">
-                                                                    <span class=" text-[#CF95F2] rounded-full text-center">
+                                                            <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
+                                                                <span className="flex items-center rounded-full text-sm  justify-between py-2 px-5 gap-2">
+                                                                    <span className=" text-[#CF95F2] rounded-full text-center">
                                                                         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                             <path d="M6.11301 9.88732L9.88634 6.11398M9.88634 9.88732L6.11301 6.11398M7.99967 14.6673C11.6663 14.6673 14.6663 11.6673 14.6663 8.00065C14.6663 4.33398 11.6663 1.33398 7.99967 1.33398C4.33301 1.33398 1.33301 4.33398 1.33301 8.00065C1.33301 11.6673 4.33301 14.6673 7.99967 14.6673Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                                                         </svg>
@@ -227,9 +227,9 @@ const Proposals = () => {
                                                                     <span className='inline-flex items-center gap-1 text-xs'><img src='/spaces-img/image3.svg' className='w-6 h-6'/>0x6tRuldks...v223</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
-                                                                <span class="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
-                                                                    <span class="h-2 w-4 text-[#A4A1A1] rounded-full text-center">
+                                                            <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
+                                                                <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
+                                                                    <span className="h-2 w-4 text-[#A4A1A1] rounded-full text-center">
                                                                         <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <circle cx="3" cy="3" r="3" fill="currentColor"/>
                                                                         </svg>
@@ -261,10 +261,10 @@ const Proposals = () => {
                                                                 </div>
                                                             </div>
 
-                                                            {/* <div class="relative  font-normal inline-block text-gray-500 leading-tight ">
+                                                            {/* <div className="relative  font-normal inline-block text-gray-500 leading-tight ">
                                                         
-                                                                <span class="bg-gray-200 flex items-center rounded-full   justify-start py-2 px-5 ">
-                                                                    <span class="h-2 w-4 text-gray-500 rounded-full mr-1">
+                                                                <span className="bg-gray-200 flex items-center rounded-full   justify-start py-2 px-5 ">
+                                                                    <span className="h-2 w-4 text-gray-500 rounded-full mr-1">
                                                                     <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <circle cx="3" cy="3" r="3" fill="currentColor"/>
                                                                     </svg>
@@ -274,9 +274,9 @@ const Proposals = () => {
                                                                 </span>
                                                                 
                                                             </div> */}
-                                                            <div class="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
-                                                                <span class="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
-                                                                    <span class="h-2 w-4 text-green-500 rounded-full text-center">
+                                                            <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
+                                                                <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
+                                                                    <span className="h-2 w-4 text-green-500 rounded-full text-center">
                                                                         <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <circle cx="3" cy="3" r="3" fill="currentColor"/>
                                                                         </svg>
@@ -310,9 +310,9 @@ const Proposals = () => {
                                                                     <span className='inline-flex items-center gap-1 text-xs'><img src='/spaces-img/image3.svg' className='w-6 h-6'/>0x6tRuldks...v223</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
-                                                                <span class="flex items-center rounded-full text-sm  justify-between py-2 px-5 gap-2">
-                                                                    <span class=" text-[#CF95F2] rounded-full text-center">
+                                                            <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
+                                                                <span className="flex items-center rounded-full text-sm  justify-between py-2 px-5 gap-2">
+                                                                    <span className=" text-[#CF95F2] rounded-full text-center">
                                                                         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                             <path d="M6.11301 9.88732L9.88634 6.11398M9.88634 9.88732L6.11301 6.11398M7.99967 14.6673C11.6663 14.6673 14.6663 11.6673 14.6663 8.00065C14.6663 4.33398 11.6663 1.33398 7.99967 1.33398C4.33301 1.33398 1.33301 4.33398 1.33301 8.00065C1.33301 11.6673 4.33301 14.6673 7.99967 14.6673Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                                                         </svg>

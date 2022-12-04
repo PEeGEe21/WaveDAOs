@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import LockIcon from '../Icons/LockIcon'
 import ToggleIcon from '../Icons/ToggleIcon'
 
-const Header = () => {
+const Header = ({toggleconnectWallet}) => {
     const [connectWallet, setConnectWallet] = useState();
 
     const toggleConnectWalletModal = () =>{
@@ -62,11 +62,11 @@ const Header = () => {
 
                     <div className='flex flex-col gap-4 mt-5 w-full'>
                         <button className='px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5' type='button' >
-                            <img src='/educare.svg'/> Metamask
+                            <img src='/Image.svg'/> Metamask
                         </button>
                         
                         <button className='px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5' type='button' >
-                            <img src='/educare.svg'/> Keeper
+                            <img src='/image 1.svg'/> Keeper
                         </button>
                         
                     </div>
