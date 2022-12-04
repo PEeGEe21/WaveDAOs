@@ -7,6 +7,7 @@ import ShareIcon from '../../../../components/Icons/ShareIcon';
 import Link from 'next/link';
 import DropdownIcon from '../../../../components/Icons/DropdownIcon';
 import EditIcon from '../../../../components/Icons/EditIcon';
+import { useState } from 'react';
 
 
 const ProposalDetail = () => {
@@ -14,6 +15,14 @@ const ProposalDetail = () => {
     const goBack =()=>{
         router.back();
     }
+
+    const [voted, setVoted] = useState();
+
+    const toggleVoted = (e) => {
+      e.preventDefault();
+      setVoted(!voted);
+      
+    };  
   return (
     <div>
       <Layout>
@@ -255,7 +264,7 @@ const ProposalDetail = () => {
                                     <button className='w-full rounded-full px-6 py-4 border border-[#545252] text-left'>Abstain</button>
                                   </div>
                                   <div className='w-full '>
-                                      <button className='button1 px-7 py-3 flex justify-center items-center text-center gap-5 rounded-full w-full'>
+                                      <button className='button1 px-7 py-3 flex justify-center items-center text-center gap-5 rounded-full w-full' onClick={toggleVoted}>
                                       Cast your vote
                                       </button>
                                   </div>
@@ -338,7 +347,7 @@ const ProposalDetail = () => {
                                     <span className='w-4/12 flex rounded-full px-6 py-4 border text-center justify-center border-[#545252]'>10 %</span>
                                   </div>
                                   <div className='w-full '>
-                                      <button className='button1 px-7 py-3 flex justify-center items-center text-center gap-5 rounded-full w-full'>
+                                      <button className='button1 px-7 py-3 flex justify-center items-center text-center gap-5 rounded-full w-full' onClick={toggleVoted}>
                                       Cast your vote
                                       </button>
                                   </div>
@@ -389,6 +398,48 @@ const ProposalDetail = () => {
                         
                     </div>
                 </div>
+        </div>
+        <div className={`modal__box ${voted ? "show" : ""}`}>
+          <div className="modal__box-wrapper shadow-lg rounded-2xl text-center">
+            <div className="flex items-start justify-between mb-6">
+              <div className="grow">
+                <h1 className="text-2xl font-semibold mb-3">Your vote has been recorded</h1>
+                <img src='/vote-agreement-papers 1.svg' className='m-auto'/>
+              </div>
+
+              <button
+                className=" flex items-center absolute top-3 right-2  "
+                onClick={() => setVoted(false)}
+              >
+                <span className="pointer-events-none flex items-center p-2">
+                  <svg
+                    className="h-5 w-5 "
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 5L5 15M5 5L15 15"
+                      stroke="currentColor"
+                      strokeWidth="1.67"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div className="flex flex-col gap-4 mt-5 w-full">
+              <button
+                className="button1 px-9 py-3 border border-[#545252] pl-36 text-white rounded-full flex items-center justify-start gap-5"
+                type="button"
+                onClick={goBack}
+              >
+                Back to Proposals
+              </button>
+            </div>
+          </div>
         </div>
       </Layout>
     </div>

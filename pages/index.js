@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
 import Sidebar from "../components/Layout/Sidebar";
+import Link from "next/link";
 import { useState } from "react";
 const CreateSpace = () => {
   const [connectWallet, setConnectWallet] = useState();
@@ -454,12 +455,12 @@ const CreateSpace = () => {
             </div>
 
             <div className="flex flex-col gap-4 mt-5 w-full">
-              <button
-                className="button1 px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
+             <Link href='/spaces' className="" > <button
+                className="button1 m-auto px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
                 type="button"
               >
                 Go to Spaces
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
