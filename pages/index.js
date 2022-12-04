@@ -1,8 +1,27 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
 import Sidebar from "../components/Layout/Sidebar";
-import walletpic from "../public/no-money-in-wallet.svg";
+import { useState } from "react";
 const CreateSpace = () => {
+  const [connectWallet, setConnectWallet] = useState();
+
+  const toggleConnectWalletModal = (e) => {
+    e.preventDefault();
+    setConnectWallet(!connectWallet);
+  };
+
+  const [makePublic, setMakePublic] = useState();
+
+  const toggleMakePublic = (e) => {
+    setMakePublic(!makePublic);
+    e.preventDefault();
+  };
+  const [congrats, setCongrats] = useState();
+
+  const toggleCongrats = (e) => {
+    setCongrats(!congrats);
+    e.preventDefault();
+  };
   return (
     <div>
       {/* first page connect wallet */}
@@ -20,7 +39,10 @@ const CreateSpace = () => {
             <p className="text-center m-4 text-gray-300 text-sm">
               Connect wallet to begin making decisions
             </p>
-            <button className="button1 h-12 w-4/5 m-auto rounded-3xl">
+            <button
+              className="button1 h-12 w-4/5 m-auto rounded-3xl"
+              onClick={toggleConnectWalletModal}
+            >
               Connect Wallet
             </button>
           </div>
@@ -139,8 +161,8 @@ const CreateSpace = () => {
             <input type="checkbox" className="ml-40 text-sm text-gray-300" />
             <label>Use address in this account</label>
             <p className="text-sm text-gray-300">
-              The user account with control over the space&apos;s settings is the
-              space controller.{" "}
+              The user account with control over the space&apos;s settings is
+              the space controller.{" "}
             </p>
             <input
               type="text"
@@ -226,7 +248,7 @@ const CreateSpace = () => {
               <div>
                 <label>Voting Delay</label>
                 <p className="text-sm pr-6 text-gray-300">
-                This states how long voting can be delayed for 
+                  This states how long voting can be delayed for
                 </p>
                 <input
                   type="text"
@@ -237,7 +259,8 @@ const CreateSpace = () => {
               <div>
                 <label>Voting Period</label>
                 <p className="text-sm pr-6 text-gray-300">
-                This states how long voting can be held for                 </p>
+                  This states how long voting can be held for{" "}
+                </p>
                 <input
                   type="text"
                   placeholder=""
@@ -247,42 +270,196 @@ const CreateSpace = () => {
             </div>
             <p className="mb-2">Add Treasury</p>
             <p className="text-sm text-gray-300 mb-6">
-            This directs voters on how to vote. You can always change it later..
+              This directs voters on how to vote. You can always change it
+              later..
             </p>
             <label>Network</label>
-            <br/>
+            <br />
             <input
               type="text"
               placeholder=""
               className="bg-transparent border w-full h-12 border-gray-400 rounded-3xl p-3 mb-10"
-            /><br></br>
+            />
+            <br></br>
             <label>Name</label>
-            <br/>
+            <br />
             <input
               type="text"
               placeholder=""
               className="bg-transparent border w-full h-12 border-gray-400 rounded-3xl p-3 mb-10"
-            /><br/>
-            <label>Address</label><br/>
+            />
+            <br />
+            <label>Address</label>
+            <br />
             <input
               type="text"
               placeholder=""
               className="bg-transparent border w-full h-12 border-gray-400 rounded-3xl p-3 mb-10"
-            /><br></br>
+            />
+            <br></br>
             <div className="text-right">
-            <button className="rounded-3xl text-pin border border-pin h-12 p-2 mb-12  ">
-                  Add Another
-                </button></div>
-                <button className="button1 button1 h-12 w-full m-auto rounded-3xl">
-            Create Space
-          </button>
+              <button className="rounded-3xl text-pin border border-pin h-12 p-2 mb-12  ">
+                Add Another
+              </button>
+            </div>
+            <button
+              className="button1 button1 h-12 w-full m-auto rounded-3xl"
+              onClick={toggleMakePublic}
+            >
+              Create Space
+            </button>
           </form>
         </div>
 
+        {/* Modal Boxes */}
 
+        <div className={`modal__box ${connectWallet ? "show" : ""}`}>
+          <div className="modal__box-wrapper shadow-lg rounded-2xl">
+            <div className="flex items-start justify-between mb-6">
+              <div className="grow">
+                <h1 className="text-2xl font-semibold mb-3">Connect Wallet</h1>
+              </div>
 
+              <button
+                className=" flex items-center absolute top-3 right-2  "
+                onClick={() => setConnectWallet(false)}
+              >
+                <span className="pointer-events-none flex items-center p-2">
+                  <svg
+                    className="h-5 w-5 "
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 5L5 15M5 5L15 15"
+                      stroke="currentColor"
+                      strokeWidth="1.67"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
 
-        
+            <div className="flex flex-col gap-4 mt-5 w-full">
+              <button
+                className="px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
+                type="button"
+              >
+                <img src="/educare.svg" /> Metamask
+              </button>
+
+              <button
+                className="px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
+                type="button"
+              >
+                <img src="/educare.svg" /> Keeper
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Make Public Modal */}
+        <div className={`modal__box ${makePublic ? "show" : ""}`}>
+          <div className="modal__box-wrapper shadow-lg rounded-2xl">
+            <div className="flex items-start justify-between mb-6">
+              <div className="grow">
+                <h1 className="text-2xl font-semibold mb-3">
+                  Do you want to make this space Public
+                </h1>
+              </div>
+
+              <button
+                className=" flex items-center absolute top-3 right-2  "
+                onClick={() => setMakePublic(false)}
+              >
+                <span className="pointer-events-none flex items-center p-2">
+                  <svg
+                    className="h-5 w-5 "
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 5L5 15M5 5L15 15"
+                      stroke="currentColor"
+                      strokeWidth="1.67"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div className="flex flex-col gap-4 mt-5 w-full">
+              <button
+                className="button1 px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
+                onClick={toggleCongrats}
+                type="button"
+              >
+                Yes
+              </button>
+
+              <button
+                className=" px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
+                onClick={toggleCongrats}
+                type="button"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* congrats modal */}
+
+        <div className={`modal__box ${congrats ? "show" : ""}`}>
+          <div className="modal__box-wrapper shadow-lg rounded-2xl text-center">
+            <div className="flex items-start justify-between mb-6">
+              <div className="grow">
+                <h1 className="text-2xl font-semibold mb-3">Congratulations</h1>
+                <p>Your space ( Lets go on) is live and public!!</p>
+                <p className="text-sm font-thin text-gray-300">
+                  You can now start creating proposals and invite others to your
+                  space
+                </p>
+              </div>
+
+              <button
+                className=" flex items-center absolute top-3 right-2  "
+                onClick={() => setCongrats(false)}
+              >
+                <span className="pointer-events-none flex items-center p-2">
+                  <svg
+                    className="h-5 w-5 "
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 5L5 15M5 5L15 15"
+                      stroke="currentColor"
+                      strokeWidth="1.67"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div className="flex flex-col gap-4 mt-5 w-full">
+              <button
+                className="button1 px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
+                type="button"
+              >
+                Go to Spaces
+              </button>
+            </div>
+          </div>
+        </div>
       </Layout>
     </div>
   );
