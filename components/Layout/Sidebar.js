@@ -1,10 +1,13 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 import AboutIcon from '../Icons/AboutIcon'
 import ExploreIcon from '../Icons/ExploreIcon'
 import SpacesIcon from '../Icons/SpacesIcon'
 
 const Sidebar = () => {
+    const router = useRouter()
+
   return (
     <div>
         <div className='h-full sidebar flex justify-between shadow-sm scrollbar-change flex-col overflow-y-auto w-60 border-r border-r-[#545252]'>
@@ -36,7 +39,7 @@ const Sidebar = () => {
                                     <span className="nav_item">Explore</span> 
                                 </div>
                             </Link>
-                            <Link href="/spaces" className='hover:bg-[#3F3F3F] transition-all ease-in duration-200 border-b border-[#545252]'>
+                            <Link href="/spaces" className={`hover:bg-[#3F3F3F] transition-all ease-in duration-200 border-b border-[#545252] ${(router.asPath === "/spaces" || router.pathname.startsWith("/spaces")) && 'bg-[#3F3F3F]'}`}>
                                 <div className='flex items-center gap-3 py-4 px-6 mx-auto text-sm'>
                                    <span>
                                         <SpacesIcon/>
