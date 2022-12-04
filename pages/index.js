@@ -13,14 +13,17 @@ const CreateSpace = () => {
   const [makePublic, setMakePublic] = useState();
 
   const toggleMakePublic = (e) => {
-    setMakePublic(!makePublic);
     e.preventDefault();
+    setMakePublic(!makePublic);
+    
   };
   const [congrats, setCongrats] = useState();
 
   const toggleCongrats = (e) => {
-    setCongrats(!congrats);
     e.preventDefault();
+    setMakePublic(false);
+    setCongrats(!congrats);
+    
   };
   return (
     <div>
@@ -348,14 +351,14 @@ const CreateSpace = () => {
                 className="px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
                 type="button"
               >
-                <img src="/educare.svg" /> Metamask
+                <img src="/image.svg" /> Metamask
               </button>
 
               <button
                 className="px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
                 type="button"
               >
-                <img src="/educare.svg" /> Keeper
+                <img src="/image 1.svg" /> Keeper
               </button>
             </div>
           </div>
