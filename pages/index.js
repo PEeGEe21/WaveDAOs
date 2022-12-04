@@ -128,11 +128,17 @@ const CreateSpace = () => {
               <p className="mb-5">Add Socials</p>
               <label className="text-sm text-gray-300">Github</label>
               <br />
-              <input
-                type="text"
-                placeholder=" Paste URL"
-                className="bg-transparent border w-4/5 h-12 border-gray-400 rounded-3xl p-3 mb-10"
-              />
+                <div className="mt-1 relative rounded-full flex-1 bg-transparent items-center grow flex h-14 w-4/5  ">
+                    <div className="absolute inset-y-0 left-0 px-3 flex items-center pointer-events-none h-full">
+                        <span className="text-gray-500 px-3 w-22 h-22">
+                            <img src="/github.svg" className="w-full h-full"/>
+                        </span>
+                    </div>
+                    <input type="text" name="github_address" id="github_address" className="  py-2 block w-full pl-16 pr-7  sm:text-sm rounded-full h-full focus:outline-none bg-transparent border border-[#545252] transition ease-in duration-200"/>
+                </div>
+                <img src="/discord.svg" />
+                <img src="/twitter.svg" />
+
               <br />
               <label className="text-sm text-gray-300">Twitter</label>
               <br />
@@ -352,7 +358,7 @@ const CreateSpace = () => {
                 className="px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5"
                 type="button"
               >
-                <img src="/image.svg" /> Metamask
+                <img src="/Image.svg" /> Metamask
               </button>
 
               <button
