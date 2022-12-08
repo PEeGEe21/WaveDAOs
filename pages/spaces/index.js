@@ -64,8 +64,8 @@ const Spaces = () => {
 
                     <div className='relative'>
                         <button className="flex items-center  bg-transparent text-sm border-[#545252] border px-5 py-2 rounded-full h-12" onClick={handleCategoryDropdown}>
-                            <span>
-
+                            <span  className='h-6 w-6 flex items-center mr-1'>
+                                <img src='/educare.svg' className='h-full w-full'/>
                             </span>
                             Categories
                             <span className='text-sm flex items-center ml-4 pl-3 border-[#545252] border-l' >
@@ -84,8 +84,6 @@ const Spaces = () => {
                                                     {category.name}
                                                 </button>
                                             ))}
-                                            
-                                           
                                         
                                         </div>
                                 </div>
@@ -167,136 +165,343 @@ const Spaces = () => {
 
                                         <div className=" w-full mt-3 md:mt-0  relative overflow-hidden rounded h-full fade-in">
                                             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-x-12 gap-y-4">
-                                            <Link href="/spaces/2">
+                                                {/* <Link href="/spaces/2">
 
-                                                <div className="flex items-center flex-col justify-center mb-2 gap-4 text-sm w-full border border-[#545252] rounded-md p-3 py-5">
-                                                    <div className='h-20 w-20'>
-                                                        <img src='/spaces-img/image2.svg' className='w-full object-cover rounded-full  '/>
+                                                    <div className="flex items-center flex-col justify-center mb-2 gap-4 text-sm w-full border border-[#545252] rounded-md p-3 py-5">
+                                                        <div className='h-20 w-20'>
+                                                            <img src='/spaces-img/image2.svg' className='w-full object-cover rounded-full  '/>
+                                                        </div>
+                                                
+                                                        <div className=' mt-2'>
+                                                            <h4 className='mb-1'>Lets go on</h4>
+                                                            <p className="text-[#8F8F8F]">Arts, Grant</p>
+                                                            <p className="text-[#8F8F8F]">5k Members</p>
+                                                        </div> 
                                                     </div>
-                                            
-                                                    <div className=' mt-2'>
-                                                        <h4 className='mb-1'>Lets go on</h4>
-                                                        <p className="text-[#8F8F8F]">Arts, Grant</p>
-                                                        <p className="text-[#8F8F8F]">5k Members</p>
-                                                    </div> 
-                                                </div>
-                                                </Link>
+                                                </Link> */}
+                                                    <div className='flip'>
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
+                                                            <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
-                                                <Link href="/spaces/2">
+                                                                <div className='h-20 w-20'>
+                                                                    <img src='/spaces-img/image2.svg' className='w-full object-cover rounded-full  '/>
+                                                                </div>
+                                                        
+                                                                <div className=' mt-2'>
+                                                                    
+                                                                    <h4 className='mb-1'>Lets go on</h4>
+                                                                    <p className="text-[#8F8F8F]">Arts, Grant</p>
+                                                                    <p className="text-[#8F8F8F]">5k Members</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div> 
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md back bg-[#373636]">
+                                                            <div className="flex flex-col justify-evenly gap-2 w-full p-3 py-5 ">
 
-                                                <div className="flex items-center flex-col justify-center mb-2 gap-4 text-sm w-full border border-[#545252] rounded-md p-3 py-5">
-                                                        <div className='h-20 w-20'>
-                                                            <img src='/spaces-img/image3.svg' className='w-full object-cover rounded-full  '/>
-                                                        </div>
-                                                
-                                                        <div className=' mt-2'>
-                                                            
-                                                            <h4 className='mb-1'>Lets go on</h4>
-                                                            <p className="text-[#8F8F8F]">Arts, Grant</p>
-                                                            <p className="text-[#8F8F8F]">5k Members</p>
-                                                        </div>
+                                                                <div className='flex items-center justify-start gap-4'>
+                                                                    <img src='/spaces-img/image2.svg' className='object-cover rounded-full h-14 w-14 '/>
+                                                                    <span className='text-lg'>Lets go on</span>
+                                                                </div>
                                                         
-                                                </div>
-                                                </Link>
-                                                <Link href="/spaces/2">
+                                                                <div className=''>
+                                                                    
+                                                                    <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space</p>
+                                                                </div>
 
-                                                <div className="flex items-center flex-col justify-center mb-2 gap-4 text-sm w-full border border-[#545252] rounded-md p-3 py-5">
-                                                        <div className='h-20 w-20'>
-                                                            <img src='/spaces-img/image4.svg' className='w-full object-cover rounded-full  '/>
-                                                        </div>
-                                                
-                                                        <div className=' mt-2'>
-                                                            
-                                                            <h4 className='mb-1'>Lets go on</h4>
-                                                            <p className="text-[#8F8F8F]">Arts, Grant</p>
-                                                            <p className="text-[#8F8F8F]">5k Members</p>
-                                                        </div>
+                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full mt-2'>
+                                                                    Join
+                                                                </Link>
+                                                                
+                                                            </div>
                                                         
-                                                </div>
-                                                </Link>
-                                                <Link href="/spaces/2">
-                                                
-                                                <div className="flex items-center flex-col justify-center mb-2 gap-4 text-sm w-full border border-[#545252] rounded-md p-3 py-5">
-                                                        <div className='h-20 w-20'>
-                                                            <img src='/spaces-img/image5.svg' className='w-full object-cover rounded-full  '/>
                                                         </div>
-                                                
-                                                        <div className=' mt-2'>
-                                                            
-                                                            <h4 className='mb-1'>Lets go on</h4>
-                                                            <p className="text-[#8F8F8F]">Arts, Grant</p>
-                                                            <p className="text-[#8F8F8F]">5k Members</p>
-                                                        </div>
-                                                        
-                                                </div>
-                                                </Link>
-                                                <Link href="/spaces/2">
+                                                    </div>
+                                                    <div className='flip h-full'>
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
+                                                            <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
-                                                <div className="flex items-center flex-col justify-center mb-2 gap-4 text-sm w-full border border-[#545252] rounded-md p-3 py-5">
-                                                        <div className='h-20 w-20'>
-                                                            <img src='/spaces-img/image9.svg' className='w-full object-cover rounded-full  '/>
-                                                        </div>
-                                                
-                                                        <div className=' mt-2'>
-                                                            
-                                                            <h4 className='mb-1'>Lets go on</h4>
-                                                            <p className="text-[#8F8F8F]">Arts, Grant</p>
-                                                            <p className="text-[#8F8F8F]">5k Members</p>
-                                                        </div>
+                                                                <div className='h-20 w-20'>
+                                                                    <img src='/spaces-img/image3.svg' className='w-full object-cover rounded-full  '/>
+                                                                </div>
                                                         
-                                                </div>
-                                                </Link>
-                                                <Link href="/spaces/2">
-                                                
-                                                <div className="flex items-center flex-col justify-center mb-2 gap-4 text-sm w-full border border-[#545252] rounded-md p-3 py-5">
-                                                        <div className='h-20 w-20'>
-                                                            <img src='/spaces-img/image6.svg' className='w-full object-cover rounded-full  '/>
-                                                        </div>
-                                                
-                                                        <div className=' mt-2'>
-                                                            
-                                                            <h4 className='mb-1'>Lets go on</h4>
-                                                            <p className="text-[#8F8F8F]">Arts, Grant</p>
-                                                            <p className="text-[#8F8F8F]">5k Members</p>
-                                                        </div>
+                                                                <div className=' mt-2'>
+                                                                    
+                                                                    <h4 className='mb-1'>Lets go on</h4>
+                                                                    <p className="text-[#8F8F8F]">Arts, Grant</p>
+                                                                    <p className="text-[#8F8F8F]">5k Members</p>
+                                                                </div>
+                                                                
+                                                            </div>
                                                         
-                                                </div>
-                                                </Link>
-                                                <Link href="/spaces/2">
-                                                
-                                                <div className="flex items-center flex-col justify-center mb-2 gap-4 text-sm w-full border border-[#545252] rounded-md p-3 py-5">
-                                                        <div className='h-20 w-20'>
-                                                            <img src='/spaces-img/image7.svg' className='w-full object-cover rounded-full  '/>
-                                                        </div>
-                                                
-                                                        <div className=' mt-2'>
-                                                            
-                                                            <h4 className='mb-1'>Lets go on</h4>
-                                                            <p className="text-[#8F8F8F]">Arts, Grant</p>
-                                                            <p className="text-[#8F8F8F]">5k Members</p>
-                                                        </div>
+                                                        </div> 
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md back bg-[#373636]">
+                                                            <div className="flex flex-col justify-between gap-2 w-full h-full p-3 py-5 ">
+
+                                                                <div className='flex items-center justify-start gap-4'>
+                                                                    <img src='/spaces-img/image3.svg' className='object-cover rounded-full h-14 w-14 '/>
+                                                                    <span className='text-lg'>Lets go on</span>
+                                                                </div>
                                                         
-                                                </div>
-                                                </Link>
-                                                <Link href="/spaces/2">
+                                                                <div className=''>
+                                                                    
+                                                                    <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
+                                                                </div>
+
+                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                    Join
+                                                                </Link>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+
+                                                    <div className='flip h-full'>
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
+                                                            <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
+
+                                                                <div className='h-20 w-20'>
+                                                                    <img src='/spaces-img/image4.svg' className='w-full object-cover rounded-full  '/>
+                                                                </div>
+                                                        
+                                                                <div className=' mt-2'>
+                                                                    
+                                                                    <h4 className='mb-1'>Lets go on</h4>
+                                                                    <p className="text-[#8F8F8F]">Arts, Grant</p>
+                                                                    <p className="text-[#8F8F8F]">5k Members</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div> 
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md back bg-[#373636]">
+                                                            <div className="flex flex-col justify-between gap-2 w-full h-full p-3 py-5 ">
+
+                                                                <div className='flex items-center justify-start gap-4'>
+                                                                    <img src='/spaces-img/image4.svg' className='object-cover rounded-full h-14 w-14 '/>
+                                                                    <span className='text-lg'>Lets go on</span>
+                                                                </div>
+                                                        
+                                                                <div className=''>
+                                                                    
+                                                                    <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
+                                                                </div>
+
+                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                    Join
+                                                                </Link>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div className='flip h-full'>
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
+                                                            <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
+
+                                                                <div className='h-20 w-20'>
+                                                                    <img src='/spaces-img/image5.svg' className='w-full object-cover rounded-full  '/>
+                                                                </div>
+                                                        
+                                                                <div className=' mt-2'>
+                                                                    
+                                                                    <h4 className='mb-1'>Lets go on</h4>
+                                                                    <p className="text-[#8F8F8F]">Arts, Grant</p>
+                                                                    <p className="text-[#8F8F8F]">5k Members</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div> 
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md back bg-[#373636]">
+                                                            <div className="flex flex-col justify-between gap-2 w-full h-full p-3 py-5 ">
+
+                                                                <div className='flex items-center justify-start gap-4'>
+                                                                    <img src='/spaces-img/image5.svg' className='object-cover rounded-full h-14 w-14 '/>
+                                                                    <span className='text-lg'>Lets go on</span>
+                                                                </div>
+                                                        
+                                                                <div className=''>
+                                                                    
+                                                                    <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
+                                                                </div>
+
+                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                    Join
+                                                                </Link>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div className='flip h-full'>
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
+                                                            <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
+
+                                                                <div className='h-20 w-20'>
+                                                                    <img src='/spaces-img/image6.svg' className='w-full object-cover rounded-full  '/>
+                                                                </div>
+                                                        
+                                                                <div className=' mt-2'>
+                                                                    
+                                                                    <h4 className='mb-1'>Lets go on</h4>
+                                                                    <p className="text-[#8F8F8F]">Arts, Grant</p>
+                                                                    <p className="text-[#8F8F8F]">5k Members</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div> 
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md back bg-[#373636]">
+                                                            <div className="flex flex-col justify-between gap-2 w-full h-full p-3 py-5 ">
+
+                                                                <div className='flex items-center justify-start gap-4'>
+                                                                    <img src='/spaces-img/image6.svg' className='object-cover rounded-full h-14 w-14 '/>
+                                                                    <span className='text-lg'>Lets go on</span>
+                                                                </div>
+                                                        
+                                                                <div className=''>
+                                                                    
+                                                                    <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
+                                                                </div>
+
+                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                    Join
+                                                                </Link>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div className='flip h-full'>
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
+                                                            <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
+
+                                                                <div className='h-20 w-20'>
+                                                                    <img src='/spaces-img/image7.svg' className='w-full object-cover rounded-full  '/>
+                                                                </div>
+                                                        
+                                                                <div className=' mt-2'>
+                                                                    
+                                                                    <h4 className='mb-1'>Lets go on</h4>
+                                                                    <p className="text-[#8F8F8F]">Arts, Grant</p>
+                                                                    <p className="text-[#8F8F8F]">5k Members</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div> 
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md back bg-[#373636]">
+                                                            <div className="flex flex-col justify-between gap-2 w-full h-full p-3 py-5 ">
+
+                                                                <div className='flex items-center justify-start gap-4'>
+                                                                    <img src='/spaces-img/image7.svg' className='object-cover rounded-full h-14 w-14 '/>
+                                                                    <span className='text-lg'>Lets go on</span>
+                                                                </div>
+                                                        
+                                                                <div className=''>
+                                                                    
+                                                                    <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
+                                                                </div>
+
+                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                    Join
+                                                                </Link>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div className='flip h-full'>
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
+                                                            <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
+
+                                                                <div className='h-20 w-20'>
+                                                                    <img src='/spaces-img/image8.svg' className='w-full object-cover rounded-full  '/>
+                                                                </div>
+                                                        
+                                                                <div className=' mt-2'>
+                                                                    
+                                                                    <h4 className='mb-1'>Lets go on</h4>
+                                                                    <p className="text-[#8F8F8F]">Arts, Grant</p>
+                                                                    <p className="text-[#8F8F8F]">5k Members</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div> 
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md back bg-[#373636]">
+                                                            <div className="flex flex-col justify-between gap-2 w-full h-full p-3 py-5 ">
+
+                                                                <div className='flex items-center justify-start gap-4'>
+                                                                    <img src='/spaces-img/image8.svg' className='object-cover rounded-full h-14 w-14 '/>
+                                                                    <span className='text-lg'>Lets go on</span>
+                                                                </div>
+                                                        
+                                                                <div className=''>
+                                                                    
+                                                                    <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
+                                                                </div>
+
+                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                    Join
+                                                                </Link>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div className='flip h-full'>
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
+                                                            <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
+
+                                                                <div className='h-20 w-20'>
+                                                                    <img src='/spaces-img/image9.svg' className='w-full object-cover rounded-full  '/>
+                                                                </div>
+                                                        
+                                                                <div className=' mt-2'>
+                                                                    
+                                                                    <h4 className='mb-1'>Lets go on</h4>
+                                                                    <p className="text-[#8F8F8F]">Arts, Grant</p>
+                                                                    <p className="text-[#8F8F8F]">5k Members</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div> 
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md back bg-[#373636]">
+                                                            <div className="flex flex-col justify-between gap-2 w-full h-full p-3 py-5 ">
+
+                                                                <div className='flex items-center justify-start gap-4'>
+                                                                    <img src='/spaces-img/image9.svg' className='object-cover rounded-full h-14 w-14 '/>
+                                                                    <span className='text-lg'>Lets go on</span>
+                                                                </div>
+                                                        
+                                                                <div className=''>
+                                                                    
+                                                                    <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
+                                                                </div>
+
+                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                    Join
+                                                                </Link>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
 
                                                 
                                                 
-
-                                                <div className="flex items-center flex-col justify-center mb-2 gap-4 text-sm w-full border border-[#545252] rounded-md p-3 py-5">
-                                                        <div className='h-20 w-20'>
-                                                            <img src='/spaces-img/image8.svg' className='w-full object-cover rounded-full  '/>
-                                                        </div>
                                                 
-                                                        <div className=' mt-2'>
-                                                            
-                                                            <h4 className='mb-1'>Lets go on</h4>
-                                                            <p className="text-[#8F8F8F]">Arts, Grant</p>
-                                                            <p className="text-[#8F8F8F]">5k Members</p>
-                                                        </div>
-                                                        
-                                                </div>
-                                                </Link>
+                                                
+                                                
                                             </div>
                                         </div>
                                     </TabPanel>
