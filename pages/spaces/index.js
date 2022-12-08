@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { Tabs } from 'react-tabs'
 import Tab from 'react-tabs/lib/components/Tab'
 import TabList from 'react-tabs/lib/components/TabList'
@@ -8,6 +8,53 @@ import DropdownIcon from '../../components/Icons/DropdownIcon'
 import Layout from '../../components/Layout/Layout'
 
 const Spaces = () => {
+    const [catDropdown, setCatDropdown] = useState();
+
+
+    const handleCategoryDropdown = () =>{
+        setCatDropdown(!catDropdown)
+    }
+
+    const categories = [
+        {
+            "id": 1,
+            "name": "All",
+            "selected": true
+        },
+        {
+            "id": 2,
+            "name": "Collector",
+        },
+        {
+            "id": 3,
+            "name": "Creator",
+        },
+        {
+            "id": 4,
+            "name": "Grant",
+        },
+        {
+            "id": 5,
+            "name": "Investment",
+        },
+        {
+            "id": 6,
+            "name": "Media",
+        },
+        {
+            "id": 7,
+            "name": "Protocol",
+        },
+        {
+            "id": 8,
+            "name": "Service",
+        },
+        {
+            "id": 9,
+            "name": "Social",
+        },
+
+    ]
   return (
     <div>
         <Layout>
@@ -15,16 +62,34 @@ const Spaces = () => {
                 <div className='flex items-center justify-between'>
                     <h1 className='section__header'>Spaces</h1>
 
-                    <button className="flex items-center text-neutral700 bg-transparent text-sm border-[#545252] border px-5 py-2 rounded-full h-12">
-                        <span>
+                    <div className='relative'>
+                        <button className="flex items-center  bg-transparent text-sm border-[#545252] border px-5 py-2 rounded-full h-12" onClick={handleCategoryDropdown}>
+                            <span>
 
-                        </span>
-                        Categories
-                        <span className='text-sm flex items-center ml-4 pl-3 border-[#545252] border-l'>
-                            All
-                        <DropdownIcon className="text-sm text-[#545252] "/>
-                        </span>
-                    </button>
+                            </span>
+                            Categories
+                            <span className='text-sm flex items-center ml-4 pl-3 border-[#545252] border-l' >
+                                All
+                            <DropdownIcon className="text-sm text-[#545252] "/>
+                            </span>
+                        </button>
+
+                        <div className={`absolute border-none category-menu  ${catDropdown ? 'show' : ''} large-dropdown  shadow-md rounded-md w-full h-64 max-w-full scrollbar-change fade-in z-10 py-3 mt-2`}>
+                                                
+                                        
+                                        <div className=" py-4 h-full scrollbar-change overflow-y-auto px-3 space-y-2">
+
+                                            {categories.map((category, index)=>(
+                                                <button className={`flex items-center py-3 px-2 text-sm justify-between  rounded-lg w-full  hover:bg-[#545252] transition duration-200 ease-in-out  ${category.selected ? "bg-[#545252]": ""}`} type="button" key={index}>
+                                                    {category.name}
+                                                </button>
+                                            ))}
+                                            
+                                           
+                                        
+                                        </div>
+                                </div>
+                    </div>
                 </div>
 
 

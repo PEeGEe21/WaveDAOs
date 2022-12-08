@@ -8,6 +8,7 @@ import StepTwo from "../components/FormComponents/formsteps/StepTwo";
 import StepThree from "../components/FormComponents/formsteps/StepThree";
 import { UseContextProvider } from "../components/contexts/NavigationContext";
 import ReturnIcon from "../components/Icons/ReturnIcon";
+import FormStepper from "../components/FormComponents/formsteps/FormStepper";
 
 
 const CreateSpace = () => {
@@ -25,10 +26,10 @@ const CreateSpace = () => {
 
 
   const steps = [
-    "Fulfill request",
-    "Gather Plastics",
-    "Deliver Plastics",
-    "Complete",
+    1,
+    2,
+    3,
+    4,
   ];
 
   const displayStep = (step) => {
@@ -115,10 +116,10 @@ const CreateSpace = () => {
                     </div>
                 }
 
-{/* 
-        <div>
+
+        {/* <div>
             <FormStepper steps={steps} currentStep={currentStep} />
-        </div>*/}
+        </div> */}
 
     {
         startForm &&  

@@ -33,22 +33,26 @@ const Sidebar = () => {
                     <div className='nav__inner mt-5'>
                         <div className="flex flex-col justify-between " >
 
-                            <Link href="/" className='hover:bg-[#3F3F3F] transition-all ease-in duration-200 '>
-                                <div className='flex items-center gap-3 py-4 px-6 mx-auto border-b border-[#545252] text-sm'>
+                            <Link href="/explore" className={`nav__link hover:bg-[#3F3F3F] transition-all ease-in duration-200 ${(router.asPath === "/explore") ? 'bg-[#3F3F3F] active' : ''} `}>
+                                <div className='flex items-center gap-3 py-4 px-6 mx-auto border-b border-[#545252] text-sm relative'>
                                    <span>
                                         <ExploreIcon/>
                                     </span>
                                     
                                     <span className="nav_item">Explore</span> 
+                                    <span className='right_border'></span>
+
                                 </div>
                             </Link>
-                            <Link href="/spaces" className={`hover:bg-[#3F3F3F] transition-all ease-in duration-200 border-b border-[#545252] ${(router.asPath === "/spaces" || router.pathname.startsWith("/spaces")) && 'bg-[#3F3F3F]'}`}>
-                                <div className='flex items-center gap-3 py-4 px-6 mx-auto text-sm'>
+                            <Link href="/spaces" className={`nav__link hover:bg-[#3F3F3F] transition-all ease-in duration-200 border-b border-[#545252] ${(router.asPath === "/spaces" || router.pathname.startsWith("/spaces")) ? 'bg-[#3F3F3F] active' : ''}`}>
+                                <div className='flex items-center gap-3 py-4 px-6 mx-auto text-sm relative'>
                                    <span>
                                         <SpacesIcon/>
                                     </span>
                                     
                                     <span className="nav_item">Spaces</span> 
+
+                                    <span className='right_border'></span>
                                 </div>
                             </Link>
                             

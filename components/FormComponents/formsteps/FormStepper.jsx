@@ -65,42 +65,79 @@ const FormStepper = ({ steps, currentStep }) => {
 
   const stepsDisplay = newStep.map((step, index) => {
     return (
-      <div
-        key={index}
-        className={
-          index !== newStep.length - 1
-            ? "w-full flex items-center"
-            : "flex items-center"
-        }
-      >
-        <div className="relative flex flex-col items-center text-gray-500">
-          <div
-            className={`rounded-full transition duration-500 ease-in-out border-2 border-gray-300 h-12 w-12 flex items-center justify-center py-3  ${
-              step.selected
-                ? "bg-[#DD7D37] text-white font-bold border border-[#DD7D37] "
-                : ""
-            }`}
-          >
-            {step.completed ? (
-              <span className="text-white font-bold text-xl">&#10003;</span>
-            ) : (
-              index + 1
-            )}
-          </div>
-          <div
-            className={`absolute top-0  text-center mt-16 w-32 text-xs font-medium uppercase ${
-              step.highlighted ? "text-gray-900" : "text-gray-400"
-            }`}
-          >
-            {step.description}
-          </div>
-        </div>
+      <>
+      
         <div
-          className={`flex-auto border-t-2 border-dotted transition duration-500 ease-in-out  relative ${
-            step.completed ? "border-[#DD7D37]" : "border-gray-300 test"
-          }  `}
-        ></div>
-      </div>
+          key={index}
+          className={
+            index !== newStep.length - 1
+              ? "w-full flex items-center"
+              : "flex items-center"
+          }
+        >
+          <div className="relative flex flex-col items-center text-gray-500">
+            {/* {
+               currentStep === 1 ? "" : "" */}
+            
+            <div
+              className={`rounded-full transition duration-500 ease-in-out border-2 border-gray-300 h-12 w-12 flex items-center justify-center py-3  ${
+                step.selected
+                  ? "bg-[#DD7D37] text-white font-bold border border-[#DD7D37] "
+                  : ""
+              }`}
+            >
+
+              {/* {step.completed ? (
+                <span className="text-white font-bold text-xl">&#10003;</span>
+              ) : (
+                index + 1
+              )} */}
+            </div>
+            {/* } */}
+          </div>
+          <div
+            className={`flex-auto border-t-2 border transition duration-500 ease-in-out  relative ${
+              step.completed ? "border-[#B860ED]" : "border-gray-300 test"
+            }  `}
+          ></div>
+        </div>
+        {/* <div
+          key={index}
+          className={
+            index !== newStep.length - 1
+              ? "w-full flex items-center"
+              : "flex items-center"
+          }
+        >
+          <div className="relative flex flex-col items-center text-gray-500">
+            <div
+              className={`rounded-full transition duration-500 ease-in-out border-2 border-gray-300 h-12 w-12 flex items-center justify-center py-3  ${
+                step.selected
+                  ? "bg-[#DD7D37] text-white font-bold border border-[#DD7D37] "
+                  : ""
+              }`}
+            >
+              {step.completed ? (
+                <span className="text-white font-bold text-xl">&#10003;</span>
+              ) : (
+                index + 1
+              )}
+            </div>
+            <div
+              className={`absolute top-0  text-center mt-16 w-32 text-xs font-medium uppercase ${
+                step.highlighted ? "text-gray-900" : "text-gray-400"
+              }`}
+            >
+              {step.description}
+            </div>
+          </div>
+          <div
+            className={`flex-auto border-t-2 border-dotted transition duration-500 ease-in-out  relative ${
+              step.completed ? "border-[#DD7D37]" : "border-gray-300 test"
+            }  `}
+          ></div>
+        </div> */}
+      </>
     );
   });
 

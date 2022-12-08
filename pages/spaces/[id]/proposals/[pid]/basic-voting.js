@@ -1,16 +1,16 @@
 import React from 'react'
-import Layout from '../../../../components/Layout/Layout'
+import Layout from '../../../../../components/Layout/Layout'
 import { useRouter } from 'next/router';
-import ReturnIcon from '../../../../components/Icons/ReturnIcon';
-import HorizontalIcon from '../../../../components/Icons/HorizontalIcon';
-import ShareIcon from '../../../../components/Icons/ShareIcon';
+import ReturnIcon from '../../../../../components/Icons/ReturnIcon';
+import HorizontalIcon from '../../../../../components/Icons/HorizontalIcon';
+import ShareIcon from '../../../../../components/Icons/ShareIcon';
 import Link from 'next/link';
-import DropdownIcon from '../../../../components/Icons/DropdownIcon';
-import EditIcon from '../../../../components/Icons/EditIcon';
+import DropdownIcon from '../../../../../components/Icons/DropdownIcon';
+import EditIcon from '../../../../../components/Icons/EditIcon';
 import { useState } from 'react';
 
 
-const ProposalDetail = () => {
+const BasicVoting = () => {
     const router = useRouter();
     const goBack =()=>{
         router.back();
@@ -303,96 +303,6 @@ const ProposalDetail = () => {
                           </div>
 
 
-                          {/* weighted-voting */}
-                          <div className='weighted-voting space-y-9'>
-                            <div className=' p-4   transition-all duration-200 ease-linear text-sm'>
-                                <h5 className=''>Voting Details</h5>
-
-                                <div className='space-y-4 mt-5'>
-                                  <div className='flex items-center justify-between w-full text-sm'>
-                                    <span className='w-6/12 text-[#8F8F8F]'>Begins</span>
-                                    <span className='w-6/12 flex justify-start'>Dec 1, 2022 - 10:00am</span>
-                                  </div>
-                                  <div className='flex items-center justify-between w-full'>
-                                    <span className='w-6/12 text-[#8F8F8F]'>Ends</span>
-                                    <span className='w-6/12 flex justify-start'>Dec 1, 2022 - 10:00am</span>
-                                  </div>
-                                  <div className='flex items-center justify-between w-full'>
-                                    <span className='w-6/12 text-[#8F8F8F]'>Voting type</span>
-                                    <span className='w-6/12 flex justify-start'>Weighted Voting</span>
-                                  </div>
-                                    
-                                </div>
-                            </div>
-
-
-                            <div className=' p-4 border border-[#49494C] rounded-2xl transition-all duration-200 ease-linear text-sm'>
-                                <h5 className=''>Vote</h5>
-
-                                <div className='space-y-3 mt-5'>
-                                  <div className='flex items-center justify-between w-full gap-3'>
-                                    <button className='w-8/12 rounded-full px-6 py-4 border border-[#545252] text-left'>Ditto</button>
-                                    <span className='w-4/12 flex rounded-full px-6 py-4 border text-center justify-center border-[#545252]'>50 %</span>
-                                  </div>
-                                  <div className='flex items-center justify-between w-full gap-3'>
-                                    <button className='w-8/12 rounded-full px-6 py-4 border border-[#545252] text-left'>Not at all</button>
-                                    <span className='w-4/12 flex rounded-full px-6 py-4 border text-center justify-center border-[#545252]'>30 %</span>
-                                  </div>
-                                  <div className='flex items-center justify-between w-full gap-3'>
-                                    <button className='w-8/12 rounded-full px-6 py-4 border border-[#545252] text-left'>In between</button>
-                                    <span className='w-4/12 flex rounded-full px-6 py-4 border text-center justify-center border-[#545252]'>20 %</span>
-                                  </div>
-                                  <div className='flex items-center justify-between w-full gap-3'>
-                                    <button className='w-8/12 rounded-full px-6 py-4 border border-[#545252] text-left'>You dont say</button>
-                                    <span className='w-4/12 flex rounded-full px-6 py-4 border text-center justify-center border-[#545252]'>10 %</span>
-                                  </div>
-                                  <div className='w-full '>
-                                      <button className='button1 px-7 py-3 flex justify-center items-center text-center gap-5 rounded-full w-full' onClick={toggleVoted}>
-                                      Cast your vote
-                                      </button>
-                                  </div>
-                                    
-                                </div>
-                                
-                            </div>
-
-                            <div className=' p-4 border border-[#49494C] rounded-2xl transition-all duration-200 ease-linear text-sm'>
-                                <h5 className=''>Results so far</h5>
-
-                                <div className='flex items-center justify-center py-4'>
-                                  <img src='/spaces-img/Group.svg'/>
-                                </div>
-
-
-                                <div className='grid grid-cols-2 gap-4 mt-3 px-5 py-4'>
-                                  <div className='flex items-center justify-start w-full gap-3'>
-                                    <span className='w-3 h-4 px-2 bg-[#B869E8]'></span>
-                                    <span className='text-left'>Ditto</span>
-                                  </div>
-                                  <div className='flex items-center justify-start w-full gap-3'>
-                                    <span className='w-3 h-4 px-2 bg-[#EDA460]'></span>
-                                    <span className='text-left'>In between</span>
-                                  </div>
-                                  <div className='flex items-center justify-start w-full gap-3'>
-                                    <span className='w-3 h-4 px-2 bg-[#F35DB7]'></span>
-                                    <span className='text-left'>Not at all</span>
-                                  </div>
-                                  <div className='flex items-center justify-start w-full gap-3'>
-                                    <span className='w-3 h-4 px-2 bg-[#6A8AFF]'></span>
-                                    <span className='text-left'>You dont say</span>
-                                  </div>
-                                    
-                                </div>
-                                
-                            </div>
-
-
-
-
-
-
-                          </div>
-                            
 
                         </div>
                         
@@ -446,4 +356,4 @@ const ProposalDetail = () => {
   )
 }
 
-export default ProposalDetail
+export default BasicVoting

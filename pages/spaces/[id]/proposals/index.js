@@ -76,7 +76,7 @@ const Proposals = () => {
                                         <div className=" w-full mt-3 md:mt-0  relative rounded h-full fade-in">
                                             <div className='grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-7'>
 
-                                                    <Link href="/spaces/2/proposals/4">
+                                                    <Link href="/spaces/2/proposals/4/basic-voting">
                                                 
                                                
                                                         <div className="px-5 py-7 border border-[#545252] text-white text-sm font-medium rounded-lg flex items-start justify-start flex-col form-check gap-2 cursor-pointer">
@@ -129,39 +129,42 @@ const Proposals = () => {
 
                                                     </Link>
                                                 
-                                                    <div className="px-5 py-7 border border-[#545252] text-white text-sm font-medium rounded-lg flex items-start justify-start flex-col form-check gap-2 cursor-pointer">
-                                                        <div className='flex items-start flex-wrap md:flex-nowrap mb-3 gap-3'>
-                                                            <div className='grow'>
-                                                                <h4 className='mb-3 text-sm text-[#E6E5E5]'>Increase Liquidity Pool Token Reserve by 1.5% before the next bull run.</h4>
-                                                                <div className='inline-flex items-center space-x-2'>
-                                                                    <span className='text-[#8F8F8F]'>by</span>
-                                                                    <span className='inline-flex items-center gap-1 text-xs'><img src='/spaces-img/image3.svg' className='w-6 h-6'/>0x6tRuldks...v223</span>
+                                                    <Link href="/spaces/2/proposals/4/weighted-voting">
+
+                                                        <div className="px-5 py-7 border border-[#545252] text-white text-sm font-medium rounded-lg flex items-start justify-start flex-col form-check gap-2 cursor-pointer">
+                                                            <div className='flex items-start flex-wrap md:flex-nowrap mb-3 gap-3'>
+                                                                <div className='grow'>
+                                                                    <h4 className='mb-3 text-sm text-[#E6E5E5]'>Increase Liquidity Pool Token Reserve by 1.5% before the next bull run.</h4>
+                                                                    <div className='inline-flex items-center space-x-2'>
+                                                                        <span className='text-[#8F8F8F]'>by</span>
+                                                                        <span className='inline-flex items-center gap-1 text-xs'><img src='/spaces-img/image3.svg' className='w-6 h-6'/>0x6tRuldks...v223</span>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
-                                                                <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
-                                                                    <span className="h-2 w-4 text-[#A4A1A1] rounded-full text-center">
-                                                                        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <circle cx="3" cy="3" r="3" fill="currentColor"/>
-                                                                        </svg>
+                                                                <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
+                                                                    <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
+                                                                        <span className="h-2 w-4 text-[#A4A1A1] rounded-full text-center">
+                                                                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <circle cx="3" cy="3" r="3" fill="currentColor"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        Pending
                                                                     </span>
-                                                                    Pending
-                                                                </span>
+                                                                    
+                                                                </div>
                                                                 
                                                             </div>
-                                                            
-                                                        </div>
 
-                                                        <div className='flex items-start justify-start flex-col space-y-2'>
-                                                            {/* <h5 className=' text-[#E6E5E5] text-sm'>Weighted voting</h5> */} 
-                                                            <p className='text-xs text-[#C3C3C3] leading-5'>Egestas feugiat posuere vel diam egestas tortor eget magna elementum. Odio blandit sit egestas tellus. Volutpat gravida laoreet elementum morbi aliquam id quam lorem. Et leo sem malesuada risus a orci nullam mauris faucibus. Integer dignissim nunc odio quis..</p>
-                                                        </div>
+                                                            <div className='flex items-start justify-start flex-col space-y-2'>
+                                                                {/* <h5 className=' text-[#E6E5E5] text-sm'>Weighted voting</h5> */} 
+                                                                <p className='text-xs text-[#C3C3C3] leading-5'>Egestas feugiat posuere vel diam egestas tortor eget magna elementum. Odio blandit sit egestas tellus. Volutpat gravida laoreet elementum morbi aliquam id quam lorem. Et leo sem malesuada risus a orci nullam mauris faucibus. Integer dignissim nunc odio quis..</p>
+                                                            </div>
 
-                                                        <div className='flex items-center justify-between w-full mt-4'>
-                                                            <span className='text-[#8F8F8F]'>Starting soon</span>
-                                                            {/* <span><span className='text-[#8F8F8F] mr-4'>End:</span> Dec 1, 2022 - 10:00am </span> */}
+                                                            <div className='flex items-center justify-between w-full mt-4'>
+                                                                <span className='text-[#8F8F8F]'>Starting soon</span>
+                                                                {/* <span><span className='text-[#8F8F8F] mr-4'>End:</span> Dec 1, 2022 - 10:00am </span> */}
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </Link>
 
 
                                                     <div className="px-5 py-7 border border-[#545252] text-white text-sm font-medium rounded-lg flex items-start justify-start flex-col form-check gap-2 cursor-pointer">
@@ -251,6 +254,9 @@ const Proposals = () => {
                                                             {/* <span><span className='text-[#8F8F8F] mr-4'>End:</span> Dec 1, 2022 - 10:00am </span> */}
                                                         </div>
                                                     </div>
+
+                                                <Link href="/spaces/2/proposals/4/">
+
                                                     <div className="px-5 py-7 border border-[#545252] text-white text-sm font-medium rounded-lg flex items-start justify-start flex-col form-check gap-2 cursor-pointer">
                                                         <div className='flex items-start flex-wrap md:flex-nowrap mb-3 gap-3'>
                                                             <div className='grow'>
@@ -261,19 +267,6 @@ const Proposals = () => {
                                                                 </div>
                                                             </div>
 
-                                                            {/* <div className="relative  font-normal inline-block text-gray-500 leading-tight ">
-                                                        
-                                                                <span className="bg-gray-200 flex items-center rounded-full   justify-start py-2 px-5 ">
-                                                                    <span className="h-2 w-4 text-gray-500 rounded-full mr-1">
-                                                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <circle cx="3" cy="3" r="3" fill="currentColor"/>
-                                                                    </svg>
-                                                                </span>
-                                                                
-                                                                Pending
-                                                                </span>
-                                                                
-                                                            </div> */}
                                                             <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
                                                                 <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
                                                                     <span className="h-2 w-4 text-green-500 rounded-full text-center">
@@ -298,8 +291,7 @@ const Proposals = () => {
                                                             <span><span className='text-[#8F8F8F] mr-4'>End:</span> Dec 1, 2022 - 10:00am </span>
                                                         </div>
                                                     </div>
-                                                {/*  */}
-                                                
+                                                </Link>                                                
                                                 
                                                 <div className="px-5 py-7 border border-[#545252] text-white text-sm font-medium rounded-lg flex items-start justify-start flex-col form-check gap-2 cursor-pointer">
                                                         <div className='flex items-start flex-wrap md:flex-nowrap mb-3 gap-3'>
