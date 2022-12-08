@@ -39,8 +39,8 @@ const SpaceDetail = () => {
                 <div className=' w-full mt-3 md:mt-0  relative rounded h-full px-5 '>
                     {/* <div className='absolute h-full border border-[#E4E7EC] inset-0 z-0 mx-auto w-[0.5px] hidden md:block'></div> */}
 
-                    <div className='flex  py-6 w-full gap-6 relative'>
-                        <div className=' mt-9 py-6 w-8/12 border-r border-[#3F3F3F] px-10 space-detail'>
+                    <div className='flex flex-wrap lg:flex-nowrap py-6 w-full gap-6 relative'>
+                        <div className=' mt-9 py-6 w-full lg:w-8/12 lg:border-r border-[#3F3F3F] px-3 lg:px-10 space-detail'>
                             <div className='flex items-center justify-between'>
                                 <div className='flex items-center flex-row gap-3'>
                                         
@@ -370,7 +370,7 @@ const SpaceDetail = () => {
                             </div>
 
                         </div>
-                        <div className='w-4/12'>
+                        <div className='w-full md:w-4/12'>
                             <div className='rounded-lg p-4 border border-[#8F8F8F] sticky z-50 top-36 transition-all duration-200 ease-linear text-sm'>
                                 <h5 className=''>Proposals</h5>
 

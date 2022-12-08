@@ -95,7 +95,7 @@ const Explore = () => {
 
 
                 <div>
-                            <div className='flex items-center py-4 mb-3 flex-col lg:flex-row'>
+                            <div className='flex items-start md:items-center py-4 mb-3 flex-col lg:flex-row'>
                                 <p className='mr-2'>All Spaces</p>    
                                 <p className='text-sm text-gray-300'>12 Space(s)</p>
                                   

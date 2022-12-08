@@ -3,13 +3,19 @@ import React, { useState } from 'react'
 import LockIcon from '../Icons/LockIcon'
 import ToggleIcon from '../Icons/ToggleIcon'
 import { useRouter } from 'next/router'
+import Sidebar from './Sidebar'
+import MobileSidebar from './MobileSidebar'
 
 
 const Header = ({toggleconnectWallet}) => {
     const [connectWallet, setConnectWallet] = useState();
+    const [showMobileNavbar, setShowMobileNavbar] = useState();
 
     const toggleConnectWalletModal = () =>{
         setConnectWallet(!connectWallet);
+    }
+    const navbarToggler = () =>{
+        setShowMobileNavbar(!showMobileNavbar);
     }
 
     const isauthenticated = true;
@@ -21,15 +27,15 @@ const Header = ({toggleconnectWallet}) => {
     <div className='sticky top-0 z-50 py-4 px-6 bg-[#373636] border-b border-[#545252]'>
         <div className='flex items-center justify-between '>
             <div className={`flex items-center justify-between ${isauthenticated ? "gap-8 w-6/12" : ""}`}>
-                <button className='flex items-center justify-between p-3'>
-                    <ToggleIcon/>
+                <button className='flex items-center justify-between p-3' onClick={navbarToggler}>
+                    <ToggleIcon />
                 </button>
 
 
                 {/* <div> */}
                 {
                     isauthenticated && (router.asPath === "/spaces" || router.pathname.startsWith("/spaces")) &&
-                    <div className="relative rounded-full flex-1 bg-[#3F3F3F] items-center grow flex h-12 w-full  ">
+                    <div className="relative rounded-full flex-1 bg-[#3F3F3F] items-center grow flex h-12 w-full hidden lg:block ">
                         <div className="absolute inset-y-0 left-0 px-3 flex items-center pointer-events-none h-full">
                             <span className="text-gray-500 px-3 w-22 h-22">
                                 <img src="/search.svg" className="w-full h-full" />
@@ -112,6 +118,15 @@ const Header = ({toggleconnectWallet}) => {
                     </div>
                 </div>
             </div>
+
+
+
+        {showMobileNavbar && 
+
+            <MobileSidebar showMobileNavbar={showMobileNavbar}/>
+
+        }
+
     </div>
   )
 }

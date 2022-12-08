@@ -73,8 +73,8 @@ const BasicVoting = () => {
                   <div className='mt-3 w-full  md:mt-8  relative rounded h-full px-5 '>
                     {/* <div className='absolute h-full border border-[#E4E7EC] inset-0 z-0 mx-auto w-[0.5px] hidden md:block'></div> */}
 
-                    <div className='flex  py-6 w-full gap-6 relative'>
-                        <div className='  py-6 w-8/12 border-r border-[#3F3F3F] px-10'>
+                    <div className='flex  py-6 w-full gap-6 relative flex-wrap lg:flex-nowrap'>
+                        <div className='  py-6 w-full lg:w-8/12 lg:border-r border-[#3F3F3F] px-2 lg:px-10'>
                             <div className='flex items-center justify-between'>
                               <div className='grow'>
                                   <h4 className='mb-3 text-2xl text-[#E6E5E5]'>Increase Liquidity Pool Token Reserve by 1.5% before the next bull run.</h4>
@@ -225,7 +225,7 @@ const BasicVoting = () => {
 
 
                         </div>
-                        <div className='w-4/12'>
+                        <div className='w-full lg:w-4/12'>
                           {/* basic-voting */}
                           <div className='basic-voting space-y-9'>
                             <div className=' p-4   transition-all duration-200 ease-linear text-sm'>
