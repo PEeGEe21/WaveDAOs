@@ -15,7 +15,7 @@ const FormStepper = ({ steps, currentStep }) => {
           ...newSteps[count],
           highlighted: true,
           selected: true,
-          completed: true,
+          completed: false,
         };
         count++;
       }
@@ -50,7 +50,6 @@ const FormStepper = ({ steps, currentStep }) => {
       Object.assign(
         {},
         {
-          description: step,
           completed: false,
           highlighted: index === 0 ? true : false,
           selected: index === 0 ? true : false,
@@ -79,20 +78,18 @@ const FormStepper = ({ steps, currentStep }) => {
             {/* {
                currentStep === 1 ? "" : "" */}
             
-            <div
+            {/* <div
               className={`rounded-full transition duration-500 ease-in-out border-2 border-gray-300 h-12 w-12 flex items-center justify-center py-3  ${
                 step.selected
                   ? "bg-[#DD7D37] text-white font-bold border border-[#DD7D37] "
                   : ""
               }`}
-            >
+            > */}
 
-              {/* {step.completed ? (
-                <span className="text-white font-bold text-xl">&#10003;</span>
-              ) : (
-                index + 1
-              )} */}
-            </div>
+              {step.selected && step.highlighted &&  (
+                    <span class="tooltip">{index + 1} of {steps.length} </span>
+              )}
+            {/* </div> */}
             {/* } */}
           </div>
           <div
@@ -142,7 +139,7 @@ const FormStepper = ({ steps, currentStep }) => {
   });
 
   return (
-    <div className="mx-4 p-4 mb-7 flex justify-between items-center">
+    <div className="flex justify-between items-center w-full relative">
       {stepsDisplay}
     </div>
   );

@@ -28,8 +28,7 @@ const CreateSpace = () => {
   const steps = [
     1,
     2,
-    3,
-    4,
+    3
   ];
 
   const displayStep = (step) => {
@@ -79,14 +78,48 @@ const CreateSpace = () => {
 
 <div>
 
+{/* 
+                <div className='flex items-center justify-between mb-6'>
+                    <div>
+                        <button className='flex items-center bg-[#3F3F3F] gap-2 px-6 py-4 rounded-full' onClick={goBack}>
+                            <ReturnIcon /> Back
+                        </button> 
+                    
+                    </div>
+                    <div className='flex items-center flex-row gap-3'>
+                            
+                        <div className='h-14 w-14'>
+                            <img src='/spaces-img/image1.svg' className='w-full object-cover rounded-full  '/>
+                        </div>
 
-          {currentStep === 1 ? "" : 
+                        <div>
+                            <h4 className='mb-1'>Lets go on</h4>
+                        </div>
+                    </div>            
+                </div> */}
+          {/* {currentStep === 1 ? "" : 
           
-            <button className='flex items-center bg-[#3F3F3F] gap-2 px-6 py-4 rounded-full' onClick={() => handleClick()}>
+            <button className='flex items-center bg-[#3F3F3F] gap-2 px-6 py-4 rounded-full' >
                 <ReturnIcon /> Back
             </button> 
-          }
-        
+          } */}
+
+        {startForm && 
+          
+            <div className='flex items-center justify-between my-5 py-3 transition duration-200 ease-in-out'>
+                <div>
+                        {currentStep === 1 ? "" : 
+                            <button className='flex items-center bg-[#3F3F3F] gap-2 px-6 py-4 rounded-full' onClick={() => handleClick()}>
+                                <ReturnIcon /> Back
+                            </button>
+                        }
+                
+                </div>
+                <div className='w-4/12 transition duration-200 ease-in-out'>
+                    <FormStepper steps={steps} currentStep={currentStep} />
+                </div>       
+            </div>
+        }
 
 
             {
@@ -117,9 +150,6 @@ const CreateSpace = () => {
                 }
 
 
-        {/* <div>
-            <FormStepper steps={steps} currentStep={currentStep} />
-        </div> */}
 
     {
         startForm &&  
