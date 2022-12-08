@@ -123,7 +123,7 @@ const Header = ({toggleconnectWallet}) => {
 
         {showMobileNavbar && 
 
-            <MobileSidebar showMobileNavbar={showMobileNavbar}/>
+        <MobileSidebar showMobileNavbar={showMobileNavbar} navbarToggler={navbarToggler}/>
 
         }
 
