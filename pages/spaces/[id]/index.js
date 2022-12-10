@@ -272,7 +272,7 @@ const SpaceDetail = () => {
                                                     <input type="text" className='w-full h-12 rounded-full bg-transparent text-white border border-[#545252] px-4 focus:border-[#545252] active:border-[#545252] focus:outline-none transition duration-150 ease-in-out'/>
                                                 </div>
                                             </div>
-                                            <div className='flex items-stretch w-full gap-16  h-full flex-col lg:flex-row'>
+                                            <div className='flex items-stretch w-full gap-5 lg:gap-16   h-full flex-col lg:flex-row'>
                                                 <div className='flex flex-col h-full gap-2 w-full md:w-1/2'>
                                                     <div className='flex flex-col'>
                                                         <label>Voting Delay</label>
