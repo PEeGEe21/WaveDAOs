@@ -177,7 +177,7 @@ const Proposals = () => {
                                                                 <p className='text-xs text-[#C3C3C3] leading-5'>Egestas feugiat posuere vel diam egestas tortor eget magna elementum. Odio blandit sit egestas tellus. Volutpat gravida laoreet elementum morbi aliquam id quam lorem. Et leo sem malesuada risus a orci nullam mauris faucibus. Integer dignissim nunc odio quis..</p>
                                                             </div>
 
-                                                            <div className='flex items-center justify-between w-full mt-4'>
+                                                            <div className='flex items-center justify-between w-full mt-4 flex-wrap gap-2'>
                                                                 <span className='text-[#8F8F8F]'>3 days left</span>
                                                                 <span><span className='text-[#8F8F8F] mr-4'>End:</span> Dec 1, 2022 - 10:00am </span>
                                                             </div>
