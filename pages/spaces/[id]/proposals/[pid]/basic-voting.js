@@ -27,14 +27,14 @@ const BasicVoting = () => {
     <div>
       <Layout>
         <div>
-                  <div className='flex items-center justify-between mb-6 flex-col lg:flex-row'>
+                  <div className='flex items-center justify-between mb-6 flex-wrap'>
                     <div>
                         <button className='flex items-center bg-[#3F3F3F] gap-2 px-5 py-3 rounded-full' onClick={goBack}>
                             <ReturnIcon /> Back
                         </button> 
                     
                     </div>
-                    <div className='flex items-center justify-evenly gap-4 lg:gap-8 my-3 lg:my-0'>
+                    <div className='flex items-center justify-between gap-4 lg:gap-8 my-3 lg:my-0'>
 
                       <div className='flex items-center flex-row gap-3'>  
                           <img src='/spaces-img/image1.svg' className='h-14 w-14 object-cover rounded-full  '/>
