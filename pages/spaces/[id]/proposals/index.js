@@ -130,7 +130,7 @@ const Proposals = () => {
                                 <div className='py-4'>
                                     <TabPanel>
                                         <div className=" w-full mt-3 md:mt-0  relative rounded h-full fade-in">
-                                            <div className='grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-7'>
+                                            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-x-7 gap-y-7'>
 
                                                     <Link href="/spaces/2/proposals/4/basic-voting">
                                                 
@@ -247,17 +247,17 @@ const Proposals = () => {
                                                         </div>
 
 
-                                                        <div className='flex items-start justify-start flex-row space-y-2 gap-3'>
-                                                            <p className='w-6/12 text-xs text-[#C3C3C3] leading-5 border-r border-[#545252] pr-3'>Egestas feugiat posuere vel diam egestas tortor eget magna elementum. Odio blandit sit egestas tellus. Volutpat gravida laoreet elementum morbi aliquam id quam lorem</p>
+                                                        <div className='flex items-start justify-start flex-col lg:flex-row space-y-2 gap-3'>
+                                                            <p className='w-full lg:w-6/12 text-xs text-[#C3C3C3] leading-5 lg:border-r border-[#545252] pr-3'>Egestas feugiat posuere vel diam egestas tortor eget magna elementum. Odio blandit sit egestas tellus. Volutpat gravida laoreet elementum morbi aliquam id quam lorem</p>
 
-                                                            <div className='w-6/12 flex flex-row'>
+                                                            <div className='w-full lg:w-6/12 flex flex-row '>
                                                                 
                                                                 <div className='flex items-start justify-center py-4 md:py-0'>
-                                                                <img src='/basic_voting.svg' className='h-20 w-20'/>
+                                                                    <img src='/basic_voting.svg' className='h-20 w-20'/>
                                                                 </div>
 
 
-                                                                <div className='grid grid-cols-1 gap-4 mt-3 md:mt-0 px-5 py-4 md:py-0'>
+                                                                <div className='grid grid-cols-1 gap-4 mt-0 md:mt-0 px-5 py-4 md:py-0'>
                                                                     <div className='flex items-center justify-start w-full gap-3'>
                                                                         <span className='w-2 h-2 p-1 bg-[#B869E8] rounded-full'></span>
                                                                         <span className='text-left text-xs'>For (85%)</span>
@@ -342,7 +342,7 @@ const Proposals = () => {
                                                             <p className='text-xs text-[#C3C3C3] leading-5'>Egestas feugiat posuere vel diam egestas tortor eget magna elementum. Odio blandit sit egestas tellus. Volutpat gravida laoreet elementum morbi aliquam id quam lorem. Et leo sem malesuada risus a orci nullam mauris faucibus. Integer dignissim nunc odio quis..</p>
                                                         </div>
 
-                                                        <div className='flex items-center justify-between w-full mt-4'>
+                                                        <div className='flex items-center justify-between w-full mt-4 flex-wrap gap-2'>
                                                             <span className='text-[#8F8F8F]'>3 days left</span>
                                                             <span><span className='text-[#8F8F8F] mr-4'>End:</span> Dec 1, 2022 - 10:00am </span>
                                                         </div>
@@ -373,17 +373,17 @@ const Proposals = () => {
                                                         </div>
 
 
-                                                        <div className='flex items-start justify-start flex-row space-y-2 gap-3'>
-                                                            <p className='w-6/12 text-xs text-[#C3C3C3] leading-5 border-r border-[#545252] pr-3'>Egestas feugiat posuere vel diam egestas tortor eget magna elementum. Odio blandit sit egestas tellus. Volutpat gravida laoreet elementum morbi aliquam id quam lorem</p>
+                                                        <div className='flex items-start justify-start flex-col lg:flex-row space-y-2 gap-3'>
+                                                            <p className='w-full lg:w-6/12 text-xs text-[#C3C3C3] leading-5 lg:border-r border-[#545252] pr-3'>Egestas feugiat posuere vel diam egestas tortor eget magna elementum. Odio blandit sit egestas tellus. Volutpat gravida laoreet elementum morbi aliquam id quam lorem</p>
 
-                                                            <div className='w-6/12 flex flex-row'>
+                                                            <div className='w-full lg:w-6/12 flex flex-row '>
                                                                 
                                                                 <div className='flex items-start justify-center py-4 md:py-0'>
-                                                                <img src='/basic_voting.svg' className='h-20 w-20'/>
+                                                                    <img src='/basic_voting.svg' className='h-20 w-20'/>
                                                                 </div>
 
 
-                                                                <div className='grid grid-cols-1 gap-4 mt-3 md:mt-0 px-5 py-4 md:py-0'>
+                                                                <div className='grid grid-cols-1 gap-4 mt-0 md:mt-0 px-5 py-4 md:py-0'>
                                                                     <div className='flex items-center justify-start w-full gap-3'>
                                                                         <span className='w-2 h-2 p-1 bg-[#B869E8] rounded-full'></span>
                                                                         <span className='text-left text-xs'>For (85%)</span>
