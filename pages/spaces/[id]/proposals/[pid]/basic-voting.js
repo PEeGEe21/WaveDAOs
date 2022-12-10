@@ -356,7 +356,7 @@ const BasicVoting = () => {
 
             <div className="flex flex-col gap-4 mt-5 w-full">
               <button
-                className="button1 px-9 py-3 border border-[#545252] pl-36 text-white rounded-full flex items-center justify-start gap-5"
+                className="button1 px-9 py-3 border border-[#545252] text-white rounded-full flex items-center justify-center gap-5"
                 type="button"
                 onClick={goBack}
               >
