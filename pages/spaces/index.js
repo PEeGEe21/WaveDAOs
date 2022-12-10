@@ -110,7 +110,7 @@ const Spaces = () => {
                                 </TabList>
                             </div>
 
-                        <div className='flex items-center w-full my-3 block lg:hidden justify-evenly gap-3'>
+                        <div className='flex items-center w-full my-3 block lg:hidden justify-evenly gap-3 flex-col lg:flex-row'>
                             <div className="relative rounded-full flex-1 bg-[#3F3F3F] items-center grow flex h-12 w-full md:8/12">
                                 <div className="absolute inset-y-0 left-0 px-3 flex items-center pointer-events-none h-full">
                                     <span className="text-gray-500 px-3 w-22 h-22">
@@ -161,7 +161,7 @@ const Spaces = () => {
                                 <div className='py-4'>
                                     <TabPanel>
                                         <div className=" w-full mt-3 md:mt-0  relative overflow-hidden rounded h-full fade-in">
-                                            <div className=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-x-12 gap-y-4">
+                                            <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-x-12 gap-y-4">
                                                 {/* <Link href="/spaces/2"> */}
                                                     <div className='flip'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
