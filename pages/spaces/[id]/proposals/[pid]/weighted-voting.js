@@ -27,14 +27,14 @@ const WeightedVoting = () => {
     <div>
       <Layout>
         <div>
-                  <div className='flex items-center justify-between mb-6 flex-wrap'>
+                  <div className='flex items-center justify-between mb-6 flex-wrap gap-8'>
                     <div>
                         <button className='flex items-center bg-[#3F3F3F] gap-2 px-6 py-4 rounded-full' onClick={goBack}>
                             <ReturnIcon /> Back
                         </button> 
                     
                     </div>
-                    <div className='flex items-center justify-evenly gap-8 flex-wrap'>
+                    <div className='flex items-center justify-between gap-4 lg:gap-8 '>
 
                       <div className='flex items-center flex-row gap-3'>  
                           <img src='/spaces-img/image1.svg' className='h-14 w-14 object-cover rounded-full  '/>
@@ -60,8 +60,8 @@ const WeightedVoting = () => {
                         
                       </div>
                       <div>
-                        <button className='bg-[#3F3F3F] rounded-full p-3 '>
-                          <HorizontalIcon/>
+                        <button className='bg-[#3F3F3F] rounded-full p-3  '>
+                          <HorizontalIcon height="18" width="18"/>
                         </button>
                         
                       </div>
@@ -82,7 +82,7 @@ const WeightedVoting = () => {
                       </div>
                     </div>
 
-                  <div className='mt-3 w-full  md:mt-8  relative rounded h-full px-2 lg:px-5 '>
+                  <div className='w-full md:mt-8  relative rounded h-full px-2 lg:px-5 '>
                     {/* <div className='absolute h-full border border-[#E4E7EC] inset-0 z-0 mx-auto w-[0.5px] hidden md:block'></div> */}
 
                     <div className='flex  py-6 w-full gap-6 relative flex-wrap lg:flex-nowrap'>
