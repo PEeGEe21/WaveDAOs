@@ -137,7 +137,7 @@ const CreateProposals = () => {
                                                 <div className='flex flex-row items-center gap-2'>
                                                     <label className='w-3/12 text-sm text-[#8F8F8F]'>Begins</label>
                                                     <div className='space-x-4 w-9/12'>
-                                                        <button className='flex items-center justify-end gap-2 h-12  px-4 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
+                                                        <button className='flex items-center justify-end gap-2 h-12  px-5 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
                                                             <span className='flex items-center justify-between w-full text-xs'>
                                                             dd/mm/yyyy
                                                                 <DropdownIcon/>
@@ -148,7 +148,7 @@ const CreateProposals = () => {
                                                 </div>
                                                 <div className='flex flex-row items-center gap-4'>
                                                     <label className='w-3/12 text-sm text-right text-[#8F8F8F]'>Time</label>
-                                                    <div className='space-x-4 w-9/12'>
+                                                    <div className='space-x-4 w-6/12 lg:w-9/12'>
                                                         <button className='flex items-center justify-end gap-2 h-12  px-4 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
                                                             <span className='flex items-center justify-end gap-3 w-full text-xs'>
                                                             am
@@ -160,7 +160,7 @@ const CreateProposals = () => {
                                                 </div>
                                                 <div className='flex flex-row items-center gap-2'>
                                                     <label className='w-3/12 text-sm text-[#8F8F8F] '>Ends</label>
-                                                    <div className='space-x-4 w-9/12'>
+                                                    <div className='space-x-4 lg:w-9/12'>
                                                         <button className='flex items-center justify-end gap-2 h-12  px-4 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
                                                             <span className='flex items-center justify-between w-full text-xs'>
                                                             dd/mm/yyyy
@@ -172,7 +172,7 @@ const CreateProposals = () => {
                                                 </div>
                                                 <div className='flex flex-row items-center gap-4'>
                                                     <label className='w-3/12 text-sm text-right text-[#8F8F8F]'>Time</label>
-                                                    <div className='space-x-4 w-9/12'>
+                                                    <div className='space-x-4 w-6/12 lg:w-9/12'>
                                                         <button className='flex items-center justify-end gap-2 h-12  px-4 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
                                                             <span className='flex items-center justify-end gap-3 w-full text-xs'>
                                                             am
