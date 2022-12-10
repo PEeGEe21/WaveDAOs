@@ -110,8 +110,8 @@ const Spaces = () => {
                                 </TabList>
                             </div>
 
-                        <div className='flex items-center w-full my-3 block lg:hidden justify-evenly gap-3 flex-col lg:flex-row'>
-                            <div className="relative rounded-full flex-1 bg-[#3F3F3F] items-center grow flex h-12 w-full md:8/12">
+                        <div className='flex lg:items-center w-full my-3 block lg:hidden justify-evenly gap-3 flex-col lg:flex-row'>
+                            <div className="relative rounded-full  bg-[#3F3F3F] items-center grow flex h-12 w-full md:8/12">
                                 <div className="absolute inset-y-0 left-0 px-3 flex items-center pointer-events-none h-full">
                                     <span className="text-gray-500 px-3 w-22 h-22">
                                         <img src="/search.svg" className="w-full h-full" />
@@ -127,7 +127,7 @@ const Spaces = () => {
                             </div>
 
                             <div className='relative w-5/12 md:4/12'>
-                                <button className="flex items-center  bg-transparent text-sm border-[#545252] border px-5 py-2 rounded-full h-12 w-full justify-start lg:justify-end" onClick={handleCategoryDropdown}>
+                                <button className="flex items-center  bg-transparent text-sm border-[#545252] border px-5 py-2 rounded-full h-12 w-full justify-center" onClick={handleCategoryDropdown}>
                                     <span  className='h-6 w-6 flex items-center mr-1 hidden sm:block'>
                                         <img src='/educare.svg' className='h-full w-full'/>
                                     </span>
