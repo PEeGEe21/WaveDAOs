@@ -42,12 +42,7 @@ const Header = ({toggleconnectWallet}) => {
                                 <img src="/search.svg" className="w-full h-full" />
                             </span>
                         </div>
-                        <input
-                        placeholder="Search Spaces"
-                        type="text"
-                        name="search"
-                        id="search"
-                        className="  py-2 block w-full pl-16 pr-7  sm:text-sm rounded-full h-full focus:outline-none bg-transparent border-none border-[#545252] transition ease-in duration-200 text-[#A4A1A1]"
+                        <input placeholder="Search Spaces" type="text" name="search" id="search" className="py-2 block w-full pl-16 pr-7 sm:text-sm rounded-full h-full focus:outline-none bg-transparent border-none border-[#545252] transition ease-in duration-200 text-[#A4A1A1]"
                         />
                     </div>
 
@@ -58,14 +53,16 @@ const Header = ({toggleconnectWallet}) => {
             </div>
 
             <div className='flex items-center gap-8'>
-                {isauthenticated ? 
+                { isauthenticated 
+                
+                ? 
+
                     <button className='bg-transparent border border-[#545252] transition ease-in duration-200 text-white px-5 py-2 flex justify-start items-center gap-4 rounded-full' onClick={toggleConnectWalletModal}>
                         <span className="text-gray-500 w-8 h-8">
                             <img src="/spaces-img/image9.svg" className="w-full h-full" />
                         </span>
                         0x6tR...v223
                     </button>
-
                 :
                     <button className='button1 px-7 py-3 flex justify-between items-center gap-5 rounded-full' onClick={toggleConnectWalletModal}>
                         <span>
@@ -93,16 +90,14 @@ const Header = ({toggleconnectWallet}) => {
 
                     <div className="grow">
                         <h1 className="text-2xl font-semibold mb-3">Connect Wallet</h1>
-                 
                     </div>
                     
-                    <button className=" flex items-center absolute top-3 right-2  "  onClick={()=>setConnectWallet(false)}>
+                    <button className="flex items-center absolute top-3 right-2"  onClick={()=>setConnectWallet(false)}>
                         <span className="pointer-events-none flex items-center p-2">
                             <svg className='h-5 w-5 ' viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path>
                             </svg>
-                        </span>             
-                        
+                        </span>
                     </button>
 
                 </div>
@@ -115,17 +110,15 @@ const Header = ({toggleconnectWallet}) => {
                         <button className='px-9 py-3 border border-[#545252] bg-[#3F3F3F] text-white rounded-full flex items-center justify-start gap-5' type='button' >
                             <img src='/image 1.svg'/> Keeper
                         </button>
-                        
                     </div>
+
                 </div>
             </div>
 
 
 
-        {showMobileNavbar && 
-
-        <MobileSidebar showMobileNavbar={showMobileNavbar} navbarToggler={navbarToggler} setShowMobileNavbar={setShowMobileNavbar}/>
-
+        {
+            showMobileNavbar && <MobileSidebar showMobileNavbar={showMobileNavbar} navbarToggler={navbarToggler} setShowMobileNavbar={setShowMobileNavbar}/>
         }
 
     </div>
