@@ -127,7 +127,7 @@ const Spaces = () => {
                             </div>
 
                             <div className='relative w-5/12 md:4/12'>
-                                <button className="flex items-center  bg-transparent text-sm border-[#545252] border px-5 py-2 rounded-full h-12 w-full justify-end" onClick={handleCategoryDropdown}>
+                                <button className="flex items-center  bg-transparent text-sm border-[#545252] border px-5 py-2 rounded-full h-12 w-full justify-start lg:justify-end" onClick={handleCategoryDropdown}>
                                     <span  className='h-6 w-6 flex items-center mr-1 hidden sm:block'>
                                         <img src='/educare.svg' className='h-full w-full'/>
                                     </span>
