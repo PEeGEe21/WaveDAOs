@@ -82,11 +82,11 @@ const ProposalDetail = () => {
                       </div>
                     </div>
 
-                  <div className='mt-3 w-full  md:mt-8  relative rounded h-full px-5 '>
+                  <div className='mt-3 w-full  md:mt-8  relative rounded h-full px-2 lg:px-5 '>
                     {/* <div className='absolute h-full border border-[#E4E7EC] inset-0 z-0 mx-auto w-[0.5px] hidden md:block'></div> */}
 
                     <div className='flex  py-6 w-full gap-6 relative flex-wrap lg:flex-nowrap'>
-                        <div className='  py-6 w-full lg:w-8/12 lg:border-r border-[#3F3F3F] px-3 lg:px-10'>
+                        <div className='  py-6 w-full lg:w-8/12 lg:border-r border-[#3F3F3F] lg:px-10'>
                             <div className='flex items-center justify-between'>
                               <div className='grow'>
                                   <h4 className='mb-3 text-2xl text-[#E6E5E5]'>Increase Liquidity Pool Token Reserve by 1.5% before the next bull run.</h4>
