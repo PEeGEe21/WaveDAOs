@@ -1,12 +1,30 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import React from 'react'
+import React, { useEffect } from 'react'
 import AboutIcon from '../Icons/AboutIcon'
 import ExploreIcon from '../Icons/ExploreIcon'
 import SpacesIcon from '../Icons/SpacesIcon'
 
-const Sidebar = ({showMobileNavbar}) => {
-    const router = useRouter()
+const Sidebar = ({showMobileNavbar, setShowMobileNavbar}) => {
+    const router = useRouter();
+
+  useEffect(() => {
+    const listener = (event) => {
+      // Check if the click was outside the element
+      if (!event.target.closest('.sidebar')) {
+        showMobileNavbar = false;
+      }
+    };
+
+    // Add the event listener
+    document.addEventListener('click', listener);
+
+    // Clean up the event listener on unmount
+    return () => {
+      document.removeEventListener('click', listener);
+    };
+  }, []);
+
 
   return (
     <>

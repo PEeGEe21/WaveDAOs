@@ -29,12 +29,12 @@ const BasicVoting = () => {
         <div>
                   <div className='flex items-center justify-between mb-6 flex-wrap'>
                     <div>
-                        <button className='flex items-center bg-[#3F3F3F] gap-2 px-6 py-4 rounded-full' onClick={goBack}>
+                        <button className='flex items-center bg-[#3F3F3F] gap-2 px-5 py-3 rounded-full' onClick={goBack}>
                             <ReturnIcon /> Back
                         </button> 
                     
                     </div>
-                    <div className='flex items-center justify-evenly gap-8 flex-wrap'>
+                    <div className='flex items-center justify-evenly gap-4 lg:gap-8 flex-wrap'>
 
                       <div className='flex items-center flex-row gap-3'>  
                           <img src='/spaces-img/image1.svg' className='h-14 w-14 object-cover rounded-full  '/>
@@ -60,8 +60,8 @@ const BasicVoting = () => {
                         
                       </div>
                       <div>
-                        <button className='bg-[#3F3F3F] rounded-full p-3 '>
-                          <HorizontalIcon/>
+                        <button className='bg-[#3F3F3F] rounded-full p-3  '>
+                          <HorizontalIcon height="18" width="18"/>
                         </button>
                         
                       </div>

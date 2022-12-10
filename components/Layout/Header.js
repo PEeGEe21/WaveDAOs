@@ -15,6 +15,7 @@ const Header = ({toggleconnectWallet}) => {
         setConnectWallet(!connectWallet);
     }
     const navbarToggler = () =>{
+        console.log("clicked")
         setShowMobileNavbar(!showMobileNavbar);
     }
 
@@ -123,7 +124,7 @@ const Header = ({toggleconnectWallet}) => {
 
         {showMobileNavbar && 
 
-        <MobileSidebar showMobileNavbar={showMobileNavbar} navbarToggler={navbarToggler}/>
+        <MobileSidebar showMobileNavbar={showMobileNavbar} navbarToggler={navbarToggler} setShowMobileNavbar={setShowMobileNavbar}/>
 
         }
 
