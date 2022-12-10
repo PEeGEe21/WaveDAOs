@@ -34,7 +34,7 @@ const CreateProposals = () => {
                 </div>
 
 
-                <div className=' w-full mt-3 md:mt-0  relative h-full px-5 '>
+                <div className=' w-full mt-3 md:mt-0  relative h-full px-2 lg:px-5 '>
                     <div className='flex-1 w-full mb-5'>
                         <h3  className='section__header'>Create Proposals</h3>
                     </div>
@@ -138,7 +138,7 @@ const CreateProposals = () => {
                                                     <label className='w-3/12 text-sm text-[#8F8F8F]'>Begins</label>
                                                     <div className='space-x-4 w-9/12'>
                                                         <button className='flex items-center justify-end gap-2 h-12  px-4 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
-                                                            <span className='flex items-center justify-between w-full'>
+                                                            <span className='flex items-center justify-between w-full text-xs'>
                                                             dd/mm/yyyy
                                                                 <DropdownIcon/>
                                                             </span>
@@ -150,7 +150,7 @@ const CreateProposals = () => {
                                                     <label className='w-3/12 text-sm text-right text-[#8F8F8F]'>Time</label>
                                                     <div className='space-x-4 w-9/12'>
                                                         <button className='flex items-center justify-end gap-2 h-12  px-4 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
-                                                            <span className='flex items-center justify-end gap-3 w-full'>
+                                                            <span className='flex items-center justify-end gap-3 w-full text-xs'>
                                                             am
                                                                 <DropdownIcon/>
                                                             </span>
@@ -162,7 +162,7 @@ const CreateProposals = () => {
                                                     <label className='w-3/12 text-sm text-[#8F8F8F] '>Ends</label>
                                                     <div className='space-x-4 w-9/12'>
                                                         <button className='flex items-center justify-end gap-2 h-12  px-4 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
-                                                            <span className='flex items-center justify-between w-full'>
+                                                            <span className='flex items-center justify-between w-full text-xs'>
                                                             dd/mm/yyyy
                                                                 <DropdownIcon/>
                                                             </span>
@@ -174,7 +174,7 @@ const CreateProposals = () => {
                                                     <label className='w-3/12 text-sm text-right text-[#8F8F8F]'>Time</label>
                                                     <div className='space-x-4 w-9/12'>
                                                         <button className='flex items-center justify-end gap-2 h-12  px-4 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
-                                                            <span className='flex items-center justify-end gap-3 w-full'>
+                                                            <span className='flex items-center justify-end gap-3 w-full text-xs'>
                                                             am
                                                                 <DropdownIcon/>
                                                             </span>
