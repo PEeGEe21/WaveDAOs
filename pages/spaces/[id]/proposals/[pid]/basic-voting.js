@@ -84,7 +84,7 @@ const BasicVoting = () => {
                   
 
 
-                  <div className='mt-2 w-full  md:mt-8  relative rounded h-full px-2 lg:px-5 '>
+                  <div className='w-full  md:mt-8  relative rounded h-full px-2 lg:px-5 '>
                     {/* <div className='absolute h-full border border-[#E4E7EC] inset-0 z-0 mx-auto w-[0.5px] hidden md:block'></div> */}
 
                     <div className='flex  py-6 w-full gap-6 relative flex-wrap lg:flex-nowrap'>
