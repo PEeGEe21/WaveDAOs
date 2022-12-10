@@ -151,7 +151,7 @@ const Spaces = () => {
                                     
                                     </div>
                                 </div>
-                                
+
                             </div>
 
 </div>
@@ -211,7 +211,7 @@ const Spaces = () => {
                                     <TabPanel>
 
                                         <div className=" w-full mt-3 md:mt-0  relative overflow-hidden rounded h-full fade-in">
-                                            <div className=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-x-12 gap-y-4">
+                                            <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-x-12 gap-y-4">
                                                 {/* <Link href="/spaces/2">
 
                                                     <div className="flex items-center flex-col justify-center mb-2 gap-4 text-sm w-full border border-[#545252] rounded-md p-3 py-5">
