@@ -27,7 +27,7 @@ const BasicVoting = () => {
     <div>
       <Layout>
         <div>
-                  <div className='flex items-center justify-between mb-6 flex-wrap'>
+                  <div className='flex items-center justify-between mb-6 flex-col lg:flex-row'>
                     <div>
                         <button className='flex items-center bg-[#3F3F3F] gap-2 px-5 py-3 rounded-full' onClick={goBack}>
                             <ReturnIcon /> Back
