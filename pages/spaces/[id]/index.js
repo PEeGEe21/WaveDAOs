@@ -44,8 +44,8 @@ const SpaceDetail = () => {
                     {/* <div className='absolute h-full border border-[#E4E7EC] inset-0 z-0 mx-auto w-[0.5px] hidden md:block'></div> */}
 
                     <div className='flex flex-wrap lg:flex-nowrap py-6 w-full gap-6 relative'>
-                        <div className=' mt-9 py-6 w-full lg:w-8/12 lg:border-r border-[#3F3F3F] px-3 lg:px-4 xl:px-10 space-detail'>
-                            <div className='flex items-center justify-between'>
+                        <div className=' mt-9 py-6 w-full lg:w-8/12 lg:border-r border-[#3F3F3F] lg:px-4 xl:px-10 space-detail'>
+                            <div className='flex lg:items-center justify-between flex-col lg:flex-row'>
                                 <div className='flex items-center flex-row gap-3'>
                                         
                                         <div className='h-14 w-14'>
@@ -64,8 +64,11 @@ const SpaceDetail = () => {
                                         Edit Space
                                     </button>
 
-                                    {/* <Link href="/spaces/2/proposals" className='rounded-full  text-center py-3 mb-5 button-outline w-full block button-outline'>View all Proposals</Link> */}
-                                    <Link href="/spaces/2/create-proposals" className='w-full rounded-full bg-[#736C77] text-white py-3 block text-center lg:hidden px-5'>Create Proposals</Link>
+                                    <div className='flex flex-col my-4 lg:hidden'>
+                                        <Link href="/spaces/2/proposals" className='rounded-full  text-center py-3 mb-2 w-full block text-[#CF95F2] underline lg:hidden' >View all Proposals</Link>
+                                        <Link href="/spaces/2/create-proposals" className='w-full rounded-full bg-[#736C77] text-white py-3 block text-center lg:hidden px-5'>Create Proposals</Link>
+                                    </div>
+                                    
 
                                 </div>
                             </div>
