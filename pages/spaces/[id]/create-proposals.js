@@ -147,7 +147,7 @@ const CreateProposals = () => {
                                                     </div>
                                                 </div>
                                                 <div className='flex flex-row items-center gap-4'>
-                                                    <label className='w-3/12 text-sm text-right text-[#8F8F8F]'>Time</label>
+                                                    <label className='w-3/12 text-sm lg:text-right text-[#8F8F8F]'>Time</label>
                                                     <div className='space-x-4 w-9/12'>
                                                         <button className='flex items-center justify-end gap-2 h-12  px-4 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
                                                             <span className='flex items-center justify-end gap-3 w-full text-xs'>
@@ -171,7 +171,7 @@ const CreateProposals = () => {
                                                     </div>
                                                 </div>
                                                 <div className='flex flex-row items-center gap-4'>
-                                                    <label className='w-3/12 text-sm text-right text-[#8F8F8F]'>Time</label>
+                                                    <label className='w-3/12 text-sm lg:text-right text-[#8F8F8F]'>Time</label>
                                                     <div className='space-x-4 w-9/12'>
                                                         <button className='flex items-center justify-end gap-2 h-12  px-4 py-4 w-full text-[#8F8F8F] border border-[#545252] rounded-full'>
                                                             <span className='flex items-center justify-end gap-3 w-full text-xs'>
