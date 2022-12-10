@@ -69,7 +69,7 @@ const BasicVoting = () => {
                                 
                   </div>
 
-                    <div className='lg:hidden items-center justify-end flex'>
+                    <div className='lg:hidden items-center justify-start flex'>
                         <div className="relative flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]  ">
                           <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
                               <span className="h-2 w-4 text-green-500 rounded-full text-center">
