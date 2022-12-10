@@ -34,7 +34,7 @@ const BasicVoting = () => {
                         </button> 
                     
                     </div>
-                    <div className='flex items-center justify-evenly gap-4 lg:gap-8 flex-wrap'>
+                    <div className='flex items-center justify-evenly gap-4 lg:gap-8 my-3 lg:my-0'>
 
                       <div className='flex items-center flex-row gap-3'>  
                           <img src='/spaces-img/image1.svg' className='h-14 w-14 object-cover rounded-full  '/>
