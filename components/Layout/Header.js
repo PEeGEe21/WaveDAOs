@@ -75,8 +75,8 @@ const Header = ({toggleconnectWallet}) => {
 
                 }
 
-                <button className='bg-[#3F3F3F] p-3 rounded-full'>
-                    <img src='/sun.svg'/> 
+                <button className='bg-[#3F3F3F] p-3 rounded-full h-12 w-12 hidden lg:block'>
+                    <img src='/sun.svg' className='h-full w-full object-cover'/> 
                 </button>
             </div>
 

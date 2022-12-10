@@ -43,7 +43,7 @@ const ProposalDetail = () => {
                           </div>
                       </div>
 
-                      <div className="relative  flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]">
+                      <div className="relative  lg:flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F] hidden ">
                           <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
                               <span className="h-2 w-4 text-green-500 rounded-full text-center">
                                   <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,14 +53,14 @@ const ProposalDetail = () => {
                               Active
                           </span>
                       </div>
-                      <div>
+                      <div className='hidden lg:block'>
                         <button className='bg-[#3F3F3F] rounded-full p-3'>
                           <ShareIcon/> 
                         </button>
                         
                       </div>
                       <div>
-                        <button className='bg-[#3F3F3F] rounded-full p-3'>
+                        <button className='bg-[#3F3F3F] rounded-full p-3 '>
                           <HorizontalIcon/>
                         </button>
                         
@@ -69,12 +69,24 @@ const ProposalDetail = () => {
                                 
                   </div>
 
+                  <div className='lg:hidden items-center justify-end flex'>
+                        <div className="relative flex items-center md:justify-end font-normal  text-[#EEF0F2] leading-tight border border-[#545252] rounded-full bg-[#3F3F3F]  ">
+                          <span className="flex items-center rounded-full text-sm  justify-start py-2 px-5 ">
+                              <span className="h-2 w-4 text-green-500 rounded-full text-center">
+                                  <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="3" cy="3" r="3" fill="currentColor"/>
+                                  </svg>
+                              </span>
+                              Active
+                          </span>
+                      </div>
+                    </div>
 
                   <div className='mt-3 w-full  md:mt-8  relative rounded h-full px-5 '>
                     {/* <div className='absolute h-full border border-[#E4E7EC] inset-0 z-0 mx-auto w-[0.5px] hidden md:block'></div> */}
 
-                    <div className='flex  py-6 w-full gap-6 relative'>
-                        <div className='  py-6 w-full lg:w-8/12  md:border-r border-[#3F3F3F] px-3 lg:px-10'>
+                    <div className='flex  py-6 w-full gap-6 relative flex-wrap lg:flex-nowrap'>
+                        <div className='  py-6 w-full lg:w-8/12 lg:border-r border-[#3F3F3F] px-3 lg:px-10'>
                             <div className='flex items-center justify-between'>
                               <div className='grow'>
                                   <h4 className='mb-3 text-2xl text-[#E6E5E5]'>Increase Liquidity Pool Token Reserve by 1.5% before the next bull run.</h4>
@@ -94,7 +106,7 @@ const ProposalDetail = () => {
                                         <h5>Discussion URL</h5>
                                       </div>
 
-                                      <textarea className="w-full border border-[#545252] focus:outline-none active:outline-none p-3  placeholder-text-primary bg-transparent rounded-lg textarea placeholder-text-sm text-[#8F8F8F] " rows="5" id="description" defaultValue="Nulla interdum odio lectus quis donec nulla egestas lectus at. Risus sollicitudin venenatis vitae natoque ut netus. Sit sed a sagittis vel nibh viverra dui odio. Urna auctor mauris eu et pellentesque erat. Imperdiet dui viverra sit phasellus. ">
+                                      <textarea className="w-full border border-[#545252] focus:outline-none active:outline-none p-3  placeholder-text-primary bg-transparent rounded-lg textarea placeholder-text-sm text-[#8F8F8F] scrollbar-change" rows="6" id="description" defaultValue="Nulla interdum odio lectus quis donec nulla egestas lectus at. Risus sollicitudin venenatis vitae natoque ut netus. Sit sed a sagittis vel nibh viverra dui odio. Urna auctor mauris eu et pellentesque erat. Imperdiet dui viverra sit phasellus. ">
                                       
                                       </textarea>
                                   </div>

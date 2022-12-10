@@ -42,12 +42,12 @@ const StepOne = ({handleClick, currentStep, steps, data}) => {
                             />
                         </div>
                         
-                        <div className="flex ">
-                            <button className="bg-lyt  py-3 px-6 text-xs rounded-full mx-1">Art</button>
-                            <button className="bg-lyt  py-3 px-6 text-xs rounded-full mx-1">Protocol</button>
-                            <button className="bg-lyt  py-3 px-6 text-xs rounded-full mx-1">Social</button>
-                            <button className="bg-lyt  py-3 px-6 text-xs rounded-full mx-1">Investment</button>
-                            <button className="bg-lyt  py-3 px-6 text-xs rounded-full mx-1">Services</button>
+                        <div className="flex flex-wrap gap-2">
+                            <button className="bg-lyt  py-3 px-6 text-xs rounded-full">Art</button>
+                            <button className="bg-lyt  py-3 px-6 text-xs rounded-full">Protocol</button>
+                            <button className="bg-lyt  py-3 px-6 text-xs rounded-full">Social</button>
+                            <button className="bg-lyt  py-3 px-6 text-xs rounded-full">Investment</button>
+                            <button className="bg-lyt  py-3 px-6 text-xs rounded-full">Services</button>
                         </div>
                     </div>
 

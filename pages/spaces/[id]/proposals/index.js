@@ -43,7 +43,7 @@ const Proposals = () => {
 
                             <Tabs>
                                 <div className='flex items-center py-4 mb-3 flex-col lg:flex-row'>
-                                    <div className='flex-1 w-full'>
+                                    <div className='flex-1 w-full mb-4 md:mb-0'>
                                         <h3 className='section__header'>Proposals</h3>
                                     </div>
 

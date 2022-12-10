@@ -76,7 +76,7 @@ const CreateSpace = () => {
       {/* first page connect wallet */}
       <Layout connectWallet={toggleConnectWalletModal}>
 
-<div>
+<div className=" w-full lg:w-4/6">
 
 {/* 
                 <div className='flex items-center justify-between mb-6'>
@@ -115,37 +115,37 @@ const CreateSpace = () => {
                         }
                 
                 </div>
-                <div className='w-4/12 transition duration-200 ease-in-out'>
+                <div className='w-4/12 transition duration-200 ease-in-out mr-5'>
                     <FormStepper steps={steps} currentStep={currentStep} />
                 </div>       
             </div>
         }
 
 
-            {
-                !startForm &&  
+                {
+                    !startForm &&  
 
 
-                    <div className="w-4/6 pl-10">
-                    <h2 className="text-2xl font-bold my-4">Create a Space</h2>
-                    <p className="text-sm font-thin text-gray-300 mb-4 ">
-                        WavesDaos is bringing off-chain voting to the Waves DAO ecosystem by
-                        building with the design patterns used by popular DAO systems.{" "}
-                        <br />
-                        Create your own space right away and begin making choices!
-                    </p>
-                    <div className="m-auto  text-center">
-                        <img src="/no-money-in-wallet.svg" className="m-auto" />
-                        <p className="text-center m-4 text-gray-300 text-sm">
-                        Connect wallet to begin making decisions
+                    <div className=" pl-0 lg:pl-10">
+                        <h2 className="text-2xl font-bold my-4">Create a Space</h2>
+                        <p className="text-sm font-thin text-gray-300 mb-4 ">
+                            WavesDaos is bringing off-chain voting to the Waves DAO ecosystem by
+                            building with the design patterns used by popular DAO systems.{" "}
+                            <br />
+                            Create your own space right away and begin making choices!
                         </p>
-                        <button
-                        className="button1 h-12 w-4/5 m-auto rounded-3xl"
-                        onClick={toggleConnectWalletModal}
-                        >
-                        Connect Wallet
-                        </button>
-                    </div>
+                        <div className="m-auto  text-center">
+                            <img src="/no-money-in-wallet.svg" className="m-auto" />
+                            <p className="text-center m-4 text-gray-300 text-sm">
+                            Connect wallet to begin making decisions
+                            </p>
+                            <button
+                            className="button1 h-12 w-4/5 m-auto rounded-3xl"
+                            onClick={toggleConnectWalletModal}
+                            >
+                            Connect Wallet
+                            </button>
+                        </div>
                     </div>
                 }
 
@@ -155,7 +155,7 @@ const CreateSpace = () => {
         startForm &&  
         
         <div>
-            <div className="w-8/12 px-10 py-6">
+            <div className=" px-3 lg:px-10 py-6">
                 <h2 className="text-2xl font-bold my-4">Create a Space</h2>
                 
                 <UseContextProvider>{displayStep(currentStep)}</UseContextProvider> 

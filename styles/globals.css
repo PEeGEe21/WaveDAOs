@@ -45,6 +45,7 @@ body {
   background: #373636;
   border: none;
   color: #FFFFFF;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
