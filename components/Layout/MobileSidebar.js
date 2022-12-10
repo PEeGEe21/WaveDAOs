@@ -5,15 +5,14 @@ import AboutIcon from '../Icons/AboutIcon'
 import ExploreIcon from '../Icons/ExploreIcon'
 import SpacesIcon from '../Icons/SpacesIcon'
 
-const MobileSidebar = ({showMobileNavbar, navbarToggler,  setShowMobileNavbar}) => {
+const MobileSidebar = ({showMobileNavbar, navbarToggler}) => {
     const router = useRouter();
 
   useEffect(() => {
     const listener = (event) => {
       // Check if the click was outside the element
       if (!event.target.closest('.sidebar')) {
-        console.log("clicked inside movile sidebar")
-        setShowMobileNavbar(false);
+        showMobileNavbar = false;
       }
     };
 
@@ -30,7 +29,7 @@ const MobileSidebar = ({showMobileNavbar, navbarToggler,  setShowMobileNavbar}) 
     <>
     
         <div className={`md:hidden block  `}>
-            <div className={`h-full sidebar flex justify-between shadow-sm scrollbar-change flex-col overflow-y-auto w-60 border-r border-r-[#545252] bg-[#373636] sidebar ${showMobileNavbar ? "show": ""}`} >
+            <div className={`h-full sidebar flex justify-between shadow-sm scrollbar-change flex-col overflow-y-auto w-60 border-r border-r-[#545252] bg-[#373636] sidebar ${showMobileNavbar ? "show": ""}`} onMouseLeave={navbarToggler}>
                 <div className='h-full flex flex-col justify-between'>
                     <div>
 
