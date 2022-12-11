@@ -48,7 +48,7 @@ const StepThree = ({currentStep, steps}) => {
                     className="bg-transparent border w-full h-12 border-[#545252]  rounded-3xl px-4 py-3  mb-10 focus:outline-none"
                     />
 
-                    <div className='flex items-stretch w-full gap-12 h-full mb-2 flex-col lg:flex-row'>
+                    <div className='flex items-stretch w-full gap-12 h-full mb-2 flex-col md:flex-row'>
                         <div className='flex flex-col h-full gap-2 w-full md:w-1/2 '>
                             <div className='flex flex-col'>
                                 <label>Voting Delay</label>
