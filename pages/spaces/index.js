@@ -163,7 +163,51 @@ const Spaces = () => {
                                         <div className=" w-full mt-3 md:mt-0  relative overflow-hidden rounded h-full fade-in">
                                             <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-x-12 gap-y-4">
                                                 {/* <Link href="/spaces/2"> */}
-                                                    <div className='flip'>
+                                                    <Link href="/spaces/2" className='flip'>
+                                                        <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front h-full ">
+                                                            <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636] h-full">
+
+                                                                <div className='h-20 w-20'>
+                                                                    <img src='/spaces-img/image1.svg' className='w-full object-cover rounded-full  '/>
+                                                                </div>
+                                                        
+                                                                <div className=' mt-2'>
+                                                                    
+                                                                    <h4 className='mb-1'>Lets go on</h4>
+                                                                    <p className="text-[#8F8F8F]">Arts, Grant</p>
+                                                                    <p className="text-[#8F8F8F]">5k Members</p>
+                                                                </div>
+
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50 block lg:hidden' onClick={(e)=>{e.preventDefault()}} >
+                                                                    Join
+                                                                </button>
+                                                                
+                                                            </div>
+                                                        
+                                                        </div> 
+                                                        <div className="lg:flex items-center text-sm w-full border border-[#545252] rounded-md back bg-[#373636] hidden">
+                                                            <div className="flex flex-col justify-evenly gap-2 w-full h-full p-3 py-5 ">
+
+                                                                <div className='flex items-center justify-start gap-4'>
+                                                                    <img src='/spaces-img/image1.svg' className='object-cover rounded-full h-14 w-14 '/>
+                                                                    <span className='text-lg'>Lets go on</span>
+                                                                </div>
+                                                        
+                                                                <div className=''>
+                                                                    
+                                                                    <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space</p>
+                                                                </div>
+
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50' onClick={(e)=>{e.preventDefault()}} >
+                                                                    Join
+                                                                </button>
+                                                                
+                                                                
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </Link>
+                                                    {/* <div className='flip'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
                                                             <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
@@ -201,7 +245,7 @@ const Spaces = () => {
                                                             </div>
                                                         
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                     
                                                 {/* </Link> */}
                                             </div>
@@ -226,7 +270,7 @@ const Spaces = () => {
                                                         </div> 
                                                     </div>
                                                 </Link> */}
-                                                    <div className='flip'>
+                                                    <Link href="/spaces/2" className='flip'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
                                                             <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
@@ -240,6 +284,10 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Arts, Grant</p>
                                                                     <p className="text-[#8F8F8F]">5k Members</p>
                                                                 </div>
+
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50 block lg:hidden' onClick={(e)=>{e.preventDefault()}} >
+                                                                    Join
+                                                                </button>
                                                                 
                                                             </div>
                                                         
@@ -257,15 +305,15 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space</p>
                                                                 </div>
 
-                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full mt-2'>
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50' onClick={(e)=>{e.preventDefault()}} >
                                                                     Join
-                                                                </Link>
+                                                                </button>
                                                                 
                                                             </div>
                                                         
                                                         </div>
-                                                    </div>
-                                                    <div className='flip h-full'>
+                                                    </Link>
+                                                    <Link href="/spaces/2" className='flip h-full'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
                                                             <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
@@ -279,6 +327,10 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Arts, Grant</p>
                                                                     <p className="text-[#8F8F8F]">5k Members</p>
                                                                 </div>
+
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50 block lg:hidden' onClick={(e)=>{e.preventDefault()}} >
+                                                                    Join
+                                                                </button>
                                                                 
                                                             </div>
                                                         
@@ -296,16 +348,16 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
                                                                 </div>
 
-                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50' onClick={(e)=>{e.preventDefault()}} >
                                                                     Join
-                                                                </Link>
+                                                                </button>
                                                                 
                                                             </div>
                                                         
                                                         </div>
-                                                    </div>
+                                                    </Link>
 
-                                                    <div className='flip h-full'>
+                                                    <Link href="/spaces/2" className='flip h-full'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
                                                             <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
@@ -319,6 +371,10 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Arts, Grant</p>
                                                                     <p className="text-[#8F8F8F]">5k Members</p>
                                                                 </div>
+
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50 block lg:hidden' onClick={(e)=>{e.preventDefault()}} >
+                                                                    Join
+                                                                </button>
                                                                 
                                                             </div>
                                                         
@@ -336,17 +392,17 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
                                                                 </div>
 
-                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50' onClick={(e)=>{e.preventDefault()}} >
                                                                     Join
-                                                                </Link>
+                                                                </button>
                                                                 
                                                             </div>
                                                         
                                                         </div>
-                                                    </div>
+                                                    </Link>
 
 
-                                                    <div className='flip h-full'>
+                                                    <Link href="/spaces/2" className='flip h-full'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
                                                             <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
@@ -360,6 +416,10 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Arts, Grant</p>
                                                                     <p className="text-[#8F8F8F]">5k Members</p>
                                                                 </div>
+
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50 block lg:hidden' onClick={(e)=>{e.preventDefault()}} >
+                                                                    Join
+                                                                </button>
                                                                 
                                                             </div>
                                                         
@@ -377,17 +437,17 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
                                                                 </div>
 
-                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50' onClick={(e)=>{e.preventDefault()}} >
                                                                     Join
-                                                                </Link>
+                                                                </button>
                                                                 
                                                             </div>
                                                         
                                                         </div>
-                                                    </div>
+                                                    </Link>
 
 
-                                                    <div className='flip h-full'>
+                                                    <Link href="/spaces/2" className='flip h-full'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
                                                             <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
@@ -401,6 +461,10 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Arts, Grant</p>
                                                                     <p className="text-[#8F8F8F]">5k Members</p>
                                                                 </div>
+
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50 block lg:hidden' onClick={(e)=>{e.preventDefault()}} >
+                                                                    Join
+                                                                </button>
                                                                 
                                                             </div>
                                                         
@@ -418,15 +482,15 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
                                                                 </div>
 
-                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50' onClick={(e)=>{e.preventDefault()}} >
                                                                     Join
-                                                                </Link>
+                                                                </button>
                                                                 
                                                             </div>
                                                         
                                                         </div>
-                                                    </div>
-                                                    <div className='flip h-full'>
+                                                    </Link>
+                                                    <Link href="/spaces/2" className='flip h-full'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
                                                             <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
@@ -440,6 +504,10 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Arts, Grant</p>
                                                                     <p className="text-[#8F8F8F]">5k Members</p>
                                                                 </div>
+
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50 block lg:hidden' onClick={(e)=>{e.preventDefault()}} >
+                                                                    Join
+                                                                </button>
                                                                 
                                                             </div>
                                                         
@@ -457,15 +525,15 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
                                                                 </div>
 
-                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50' onClick={(e)=>{e.preventDefault()}} >
                                                                     Join
-                                                                </Link>
+                                                                </button>
                                                                 
                                                             </div>
                                                         
                                                         </div>
-                                                    </div>
-                                                    <div className='flip h-full'>
+                                                    </Link>
+                                                    <Link href="/spaces/2" className='flip h-full'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
                                                             <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
@@ -479,6 +547,10 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Arts, Grant</p>
                                                                     <p className="text-[#8F8F8F]">5k Members</p>
                                                                 </div>
+
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50 block lg:hidden' onClick={(e)=>{e.preventDefault()}} >
+                                                                    Join
+                                                                </button>
                                                                 
                                                             </div>
                                                         
@@ -496,15 +568,15 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
                                                                 </div>
 
-                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50' onClick={(e)=>{e.preventDefault()}} >
                                                                     Join
-                                                                </Link>
+                                                                </button>
                                                                 
                                                             </div>
                                                         
                                                         </div>
-                                                    </div>
-                                                    <div className='flip h-full'>
+                                                    </Link>
+                                                    <Link href="/spaces/2" className='flip h-full'>
                                                         <div className="flex items-center text-sm w-full border border-[#545252] rounded-md front ">
                                                             <div className="flex rounded-md items-center flex-col justify-center gap-4 w-full p-3 py-5 bg-[#373636]">
 
@@ -518,6 +590,10 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Arts, Grant</p>
                                                                     <p className="text-[#8F8F8F]">5k Members</p>
                                                                 </div>
+
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50 block lg:hidden' onClick={(e)=>{e.preventDefault()}} >
+                                                                    Join
+                                                                </button>
                                                                 
                                                             </div>
                                                         
@@ -535,14 +611,14 @@ const Spaces = () => {
                                                                     <p className="text-[#8F8F8F]">Dynasty of a starter for things all being equal in a matter of space...</p>
                                                                 </div>
 
-                                                                <Link href="/spaces/2" className='button1 py-2 px-6 w-full text-center rounded-full'>
+                                                                <button className='button1 py-2 px-6 w-full text-center rounded-full mt-2 z-50' onClick={(e)=>{e.preventDefault()}} >
                                                                     Join
-                                                                </Link>
+                                                                </button>
                                                                 
                                                             </div>
                                                         
                                                         </div>
-                                                    </div>
+                                                    </Link>
 
                                                 
                                                 

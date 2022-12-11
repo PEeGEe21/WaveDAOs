@@ -8,22 +8,7 @@ import SpacesIcon from '../Icons/SpacesIcon'
 const MobileSidebar = ({showMobileNavbar, navbarToggler, useref}) => {
     const router = useRouter();
 
-  useEffect(() => {
-    const listener = (event) => {
-      // Check if the click was outside the element
-      if (!event.target.closest('.sidebar')) {
-        showMobileNavbar = false;
-      }
-    };
 
-    // Add the event listener
-    document.addEventListener('click', listener);
-
-    // Clean up the event listener on unmount
-    return () => {
-      document.removeEventListener('click', listener);
-    };
-  }, []);
 
   return (
     <>
