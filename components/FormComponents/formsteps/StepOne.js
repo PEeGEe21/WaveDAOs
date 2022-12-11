@@ -1,11 +1,6 @@
 import React, {useState} from 'react'
 
 const StepOne = ({handleClick, currentStep, steps, data}) => {
-    const [fulfillRequest, setfulfillRequest] = useState();
-
-    const handlefulfillRequest = () => {
-        setfulfillRequest(!fulfillRequest)
-    }
   return (
     <>
         <div className='fade-in'>
