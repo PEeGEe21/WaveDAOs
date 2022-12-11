@@ -7,17 +7,13 @@ import Sidebar from './Sidebar'
 import MobileSidebar from './MobileSidebar'
 
 
-const Header = ({toggleconnectWallet}) => {
+const Header = ({toggleconnectWallet, navbarToggler}) => {
     const [connectWallet, setConnectWallet] = useState();
-    const [showMobileNavbar, setShowMobileNavbar] = useState();
 
     const toggleConnectWalletModal = () =>{
         setConnectWallet(!connectWallet);
     }
-    const navbarToggler = () =>{
-        console.log("clicked")
-        setShowMobileNavbar(!showMobileNavbar);
-    }
+    
 
     const isauthenticated = true;
     const router = useRouter();
@@ -28,7 +24,7 @@ const Header = ({toggleconnectWallet}) => {
     <div className='sticky top-0 z-50 py-4 px-6 bg-[#373636] border-b border-[#545252]'>
         <div className='flex items-center justify-between '>
             <div className={`flex items-center justify-between ${isauthenticated ? "gap-8 w-6/12" : ""}`}>
-                <button className='flex items-center justify-between p-3' onClick={navbarToggler}>
+                <button className='lg:hidden items-center justify-between p-3 flex rounded-full bg-[#3F3F3F]' onClick={navbarToggler}>
                     <ToggleIcon />
                 </button>
 
@@ -117,9 +113,7 @@ const Header = ({toggleconnectWallet}) => {
 
 
 
-        {
-            showMobileNavbar && <MobileSidebar showMobileNavbar={showMobileNavbar} navbarToggler={navbarToggler} setShowMobileNavbar={setShowMobileNavbar}/>
-        }
+        
 
     </div>
   )

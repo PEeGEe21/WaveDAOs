@@ -154,7 +154,7 @@ const Spaces = () => {
 
                             </div>
 
-</div>
+                        </div>
                             
 
 
