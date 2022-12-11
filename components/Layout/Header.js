@@ -24,7 +24,7 @@ const Header = ({toggleconnectWallet, navbarToggler}) => {
     <div className='sticky top-0 z-50 py-4 px-6 bg-[#373636] border-b border-[#545252]'>
         <div className='flex items-center justify-between '>
             <div className={`flex items-center justify-between ${isauthenticated ? "gap-8 w-6/12" : ""}`}>
-                <button className='lg:hidden items-center justify-between p-3 flex rounded-full bg-[#3F3F3F]' onClick={navbarToggler}>
+                <button className='md:hidden items-center justify-between p-3 flex rounded-full bg-[#3F3F3F]' onClick={navbarToggler}>
                     <ToggleIcon />
                 </button>
 
@@ -69,7 +69,7 @@ const Header = ({toggleconnectWallet, navbarToggler}) => {
 
                 }
 
-                <button className='bg-[#3F3F3F] p-3 rounded-full h-12 w-12 hidden lg:block'>
+                <button className='bg-[#3F3F3F] p-3 rounded-full h-12 w-12 hidden md:block'>
                     <img src='/sun.svg' className='h-full w-full object-cover'/> 
                 </button>
             </div>
